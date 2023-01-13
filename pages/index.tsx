@@ -81,11 +81,6 @@ export default function Home() {
             </section>
 
             <section className="bubble">
-                <h1>Nice Curves!</h1>
-                <p>
-                    A website is like a road. The more curves it has the more
-                    interesting it is.
-                </p>
                 <Cards cards={courseInfoCards} />
             </section>
 
