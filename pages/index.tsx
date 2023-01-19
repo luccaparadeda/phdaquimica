@@ -24,7 +24,7 @@ export default function Home() {
 
             <div className={styles.container}>
                 <Image
-                    src={'/../public/logoWhite.png'}
+                    src={'/logoWhite.png'}
                     alt="logo"
                     width={548}
                     height={548}

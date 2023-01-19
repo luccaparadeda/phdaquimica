@@ -8,7 +8,7 @@ const Curso = () => {
         <div className={styles.container}>
             <nav className={styles.navbar}>
                 <Image
-                    src={'/../public/LogoImage.png'}
+                    src={'/LogoImage.png'}
                     alt="Logo"
                     width={60}
                     height={60}
