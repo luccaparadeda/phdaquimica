@@ -2,41 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import { Instagram } from 'react-feather'
 import { ICard } from '../components/card'
-import { Cards } from '../views/cards'
-import { Details } from '../components/details'
-import { Checks } from '../views/checks'
-import NextImg from '../public/next.svg'
-import { NextRequest } from 'next/server'
-
-const courseInfoCards: ICard[] = [
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-    {
-        text: 'Comprar',
-    },
-]
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
     console.log(styles)
@@ -55,76 +22,18 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <header className={styles.header}>
-                <a onClick={() => window.scrollTo(0, 0)}>
-                    <h1>PH</h1>
-                </a>
-                <div className={styles.headerInfo}>
-                    <a
-                        href="https://www.instagram.com/phdaquimica/"
-                        target="to _blank"
-                    >
-                        <Instagram color="white" size={16} />
-                        <span>Instagram</span>
-                    </a>
-                    <a>Cursos</a>
-                    <a>Listas Gratuitas</a>
-                </div>
-            </header>
-
-            <section className={styles.titleWrapper}>
-                <h1 className={styles.title}>
-                    EXTENSIVO QUÍMICA<span> ENEM 2023</span>
-                </h1>
-                <h2>A química do básico ao avançado</h2>
-                <p>de um jeito que você nunca viu antes!</p>
-            </section>
-
-            <section className="bubble">
-                <Cards cards={courseInfoCards} />
-            </section>
-
-            <section className="dark">
-                <h1>Nice Curves!</h1>
-                <Details />
-                <Checks
-                    image={NextImg}
-                    items={[
-                        'teste',
-                        'teste',
-                        'teste',
-                        'teste',
-                        'teste',
-                        'teste',
-                    ]}
+            <div className={styles.container}>
+                <Image
+                    src={'/../public/logoWhite.png'}
+                    alt="logo"
+                    width={548}
+                    height={548}
+                    className={styles.logo}
                 />
-            </section>
-
-            <section className="red"></section>
-
-            <section>
-                <h1>Nice Curves!</h1>
-                <p>
-                    A website is like a road. The more curves it has the more
-                    interesting it is.
-                </p>
-            </section>
-
-            <section className="pink">
-                <h1>Nice Curves!</h1>
-                <p>
-                    A website is like a road. The more curves it has the more
-                    interesting it is.
-                </p>
-            </section>
-
-            <section className="blobs">
-                <h1>Nice Curves!</h1>
-                <p>
-                    A website is like a road. The more curves it has the more
-                    interesting it is.
-                </p>
-            </section>
+                <Link href="/curso" className={styles.loginButton}>
+                    ENTRAR
+                </Link>
+            </div>
         </>
     )
 }
