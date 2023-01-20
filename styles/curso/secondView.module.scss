@@ -3,6 +3,8 @@
 	background-color: var(--blue);
 	padding: 20px 15vw;	
 	display: flex;
+	flex-direction: column;
+	gap: 20px;
 	justify-content: center;
 	align-items:  center;
 }

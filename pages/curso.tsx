@@ -49,6 +49,10 @@ const Curso = () => {
                     </div>
                 </div>
                 <div className={secondView.secondView}>
+                    <h2>
+                        Ao final do nosso extensivo, você saberá fazer questões
+                        sobre:
+                    </h2>
                     <Cards cards={questionsAbout} />
                 </div>
             </div>
