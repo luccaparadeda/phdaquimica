@@ -1,12 +1,13 @@
 import curso from '../styles/curso/curso.module.scss'
 import firstView from '../styles/curso/firstView.module.scss'
 import secondView from '../styles/curso/secondView.module.scss'
+import thirdView from '../styles/curso/thirdView.module.scss'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Instagram } from 'react-feather'
+import { Anchor, Instagram } from 'react-feather'
 import { Cards } from '../views/cards'
-import { questionsAbout } from '../json/secondView'
+import { Card } from '../components/card'
 
 const Curso = () => {
     return (
@@ -53,7 +54,23 @@ const Curso = () => {
                         Ao final do nosso extensivo, você saberá fazer questões
                         sobre:
                     </h2>
-                    <Cards cards={questionsAbout} />
+                    <div className={secondView.cardsWrapper}>
+                        <Card text="Teste" icon={<Anchor />} />
+                        <Card text="Teste" icon={<Anchor />} />
+                        <Card text="Teste" icon={<Anchor />} />
+                        <Card text="Teste" icon={<Anchor />} />
+                    </div>
+                    <div className={secondView.cardsWrapper}>
+                        <Card text="Teste" icon={<Anchor />} />
+                        <Card text="Teste" icon={<Anchor />} />
+                        <Card text="Teste" icon={<Anchor />} />
+                    </div>
+                </div>
+                <div className={thirdView.thirdView}>
+                    <h2>
+                        Ao final do nosso extensivo, você saberá fazer questões
+                        sobre:
+                    </h2>
                 </div>
             </div>
         </>
