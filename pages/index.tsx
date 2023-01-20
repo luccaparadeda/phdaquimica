@@ -26,8 +26,8 @@ export default function Home() {
                 <Image
                     src={'/logoWhite.png'}
                     alt="logo"
-                    width={548}
-                    height={548}
+                    width={400}
+                    height={400}
                     className={styles.logo}
                 />
                 <Link href="/curso" className={styles.loginButton}>
