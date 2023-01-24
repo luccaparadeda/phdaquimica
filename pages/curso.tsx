@@ -37,7 +37,7 @@ const Curso = () => {
                     <div className={firstView.titleWrapper} id="firstViewport">
                         <h1 className={firstView.title}>EXTENSIVO QUIMICA</h1>
                         <h1 className={firstView.titleBackgroundColor}>
-                            ENEM 2023
+                            ENEM <>{new Date().getFullYear()}</>
                         </h1>
                         <p className={firstView.subtitle}>
                             Não deixe a química ser um obstáculo no seu caminho
@@ -87,7 +87,18 @@ const Curso = () => {
                         ]}
                     />
                 </div>
-                <div className={fourthView.fourthView}></div>
+                <div className={fourthView.fourthView}>
+                    <div className={fourthView.card}>
+                        <h2>1 LOTE</h2>
+                        <h2>12x 12,99</h2>
+                        <span>Á vista 2.237,99</span>
+                    </div>
+                    <div className={fourthView.card}>
+                        <h2>2 LOTE</h2>
+                        <h2>12x 12,99</h2>
+                        <span>Á vista 2.237,99</span>
+                    </div>
+                </div>
             </div>
         </>
     )

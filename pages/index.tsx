@@ -1,12 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
-import { Instagram } from 'react-feather'
-import { ICard } from '../components/card'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
-    console.log(styles)
     return (
         <>
             <Head>
@@ -21,7 +18,6 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
             <div className={styles.container}>
                 <Image
                     src={'/logoWhite.png'}
