@@ -1,12 +1,15 @@
 .secondView {
 	min-height: 100vh;
 	background-color: var(--blue);
-	padding: 100px 300px;	
+	padding: 100px 20px;	
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
 	justify-content: center;
 	align-items:  center;
+	@media (min-width: 1150px) {
+		padding: 100px 300px;	
+	}
 	.cardsWrapper {
 		display: flex;
 		justify-content: space-evenly;

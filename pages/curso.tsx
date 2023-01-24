@@ -2,12 +2,14 @@ import curso from '../styles/curso/curso.module.scss'
 import firstView from '../styles/curso/firstView.module.scss'
 import secondView from '../styles/curso/secondView.module.scss'
 import thirdView from '../styles/curso/thirdView.module.scss'
+import fourthView from '../styles/curso/fourthView.module.scss'
 
 import Image from 'next/image'
 import Link from 'next/link'
 import { Anchor, Instagram } from 'react-feather'
 import { Cards } from '../views/cards'
 import { Card } from '../components/card'
+import { Checks } from '../views/checks'
 
 const Curso = () => {
     return (
@@ -51,8 +53,8 @@ const Curso = () => {
                 </div>
                 <div className={secondView.secondView}>
                     <h2>
-                        Ao final do nosso extensivo, você saberá fazer questões
-                        sobre:
+                        Quais conteúdos serão abordados ao longo da nossa
+                        jornada?
                     </h2>
                     <div className={secondView.cardsWrapper}>
                         <Card text="Teste" icon={<Anchor />} />
@@ -67,11 +69,25 @@ const Curso = () => {
                     </div>
                 </div>
                 <div className={thirdView.thirdView}>
-                    <h2>
-                        Ao final do nosso extensivo, você saberá fazer questões
-                        sobre:
-                    </h2>
+                    <Checks
+                        image="/LogoImage.png"
+                        items={[
+                            'Teste',
+                            'teste',
+                            'teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                            'Teste',
+                        ]}
+                    />
                 </div>
+                <div className={fourthView.fourthView}></div>
             </div>
         </>
     )

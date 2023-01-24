@@ -3,7 +3,6 @@
 	width: 100%;
 	height: 100%;
 	justify-content: space-evenly;
-	min-height: 300px;
 	img {
 		display: none;
 		@media (min-width: 750px) {
@@ -12,9 +11,11 @@
 		}
 	}
 
+
 	.checksWrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+		gap: 25px;
 	}
 }
