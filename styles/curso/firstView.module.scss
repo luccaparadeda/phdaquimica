@@ -1,9 +1,9 @@
 .firstView {
+	position: relative;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	padding: 0 20px;
-
 
 	.titleWrapper {
 		display: flex;
@@ -36,5 +36,16 @@
 			width: fit-content;
 			font-size: medium;
 		}
+	}
+	.viewCross {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		left: 0;
+		bottom: 0;
+		background-color: var(--dark-blue);
+		height: 60px;
+		width: 100vw;
 	}
 }
