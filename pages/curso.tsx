@@ -7,7 +7,6 @@ import fourthView from '../styles/curso/fourthView.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Anchor, BookOpen, CheckCircle, Coffee, Instagram } from 'react-feather'
-import { Cards } from '../views/cards'
 import { Card } from '../components/card'
 import { Checks } from '../views/checks'
 
