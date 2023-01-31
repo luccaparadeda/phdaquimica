@@ -16,14 +16,14 @@
 		color: var(--dark-blue);
 		font-weight: 700;
 
-		.title {
-			&BackgroundColor {
-				background-color: var(--pink);
-				padding: 0 10px;
-			}
-		}
 	}
+}
 
+.title {
+	&BackgroundColor {
+		background-color: var(--pink);
+		padding: 0 10px;
+	}
 	.leadToPrice {
 		background-color: var(--blue);
 		color: white;

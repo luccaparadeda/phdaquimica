@@ -1,16 +1,16 @@
 .checkedWrapper {
 	display: flex;
-	gap: 20px;
-	align-items: center;
-	color: var(--dark-blue);
-	font-weight: 700;
-	letter-spacing: 2.2px;
-	svg {
-		min-width: 10rem;
+	gap: 5px;
+	align-items: left;
+	
+	p {
+		color: var(--dark-blue);
+		font-weight: 700;
+		letter-spacing: 2.2px;
+		text-align: left;
 	}
-	@media (max-width:700px) {
-			svg {
-				display: none;
-			}
+	svg {
+		min-width: 5rem;
+		margin-top: 5px;
 	}
 }

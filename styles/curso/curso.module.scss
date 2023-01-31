@@ -1,3 +1,6 @@
+.textPink {
+	color: var(--pink);
+}
 .container {
 	width: 100vw;
 	height: 500vh;
@@ -54,7 +57,8 @@
 			.bePartOf {
 				border-radius: 20px;
 				padding: 0 20px ;
-				text-shadow: 4px 3px 0px rgb(20, 255, 20);
+				background-color: var(--blue);
+				color: var(--off-white);
 			}
 			.waranty {
 				text-shadow: 4px 3px 3px var(--pink);
@@ -82,7 +86,7 @@
 		}
 		.card {
 			h2 {
-				color: var(--dark-blue);
+				color: var(--pink);
 			}
 			height: 60vh;
 			width:30vw;

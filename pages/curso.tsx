@@ -107,10 +107,15 @@ const Curso = () => {
                     </div>
                 </div>
                 <div className={thirdView.thirdView}>
-                    <h2>
-                        Por quê você deve investir no curso EXTENSIVO QUÍMICA
-                        ENEM 2023?
-                    </h2>
+                    <div>
+                        <h2>
+                            Por quê você deve investir no curso 
+                        </h2>
+                        <h2 className={curso.textPink}>
+                            EXTENSIVO QUÍMICA
+                            ENEM 2023?
+                        </h2>
+                    </div>
                     <Checks
                         image="/LogoImage.png"
                         icon={<CheckCircle color="green" />}
