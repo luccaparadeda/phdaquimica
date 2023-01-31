@@ -60,3 +60,18 @@ body {
 	position: 'fixed';
 	bottom: '0';
 }
+
+@keyframes fadeInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+.fadeIn {
+	animation: backwards fadeInLeft 2s;
+}

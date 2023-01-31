@@ -9,11 +9,23 @@ import Link from 'next/link'
 import { Anchor, BookOpen, CheckCircle, Coffee, Instagram } from 'react-feather'
 import { Card } from '../components/card'
 import { Checks } from '../views/checks'
+import { useEffect, useRef, useState } from 'react'
+import useElementOnScreen from '../hooks/useElementOnScreen'
+import { motion } from 'framer-motion'
 
 const Curso = () => {
+    const fromLeft = {
+        visible: { opacity: 1, transition: { duration: 2 } },
+        hidden: { opacity: 0 }
+      };
+      const fromRight = {
+        visible: { opacity: 1, transition: { duration: 2 } },
+        hidden: { opacity: 0 }
+      };
     return (
         <>
-            <nav className={curso.navbar}>
+            <motion.nav   initial="hidden"
+  whileInView="visible" variants={fromLeft} viewport={{amount: "all"}} className={curso.navbar}>
                 <Image
                     src={'/LogoImage.png'}
                     alt="Logo"
@@ -29,11 +41,12 @@ const Curso = () => {
                     <Instagram width={20} height={20} />
                     <p>Instagram</p>
                 </Link>
-            </nav>
+            </motion.nav>
 
             <div className={curso.container}>
                 <div className={firstView.firstView}>
-                    <div className={firstView.titleWrapper} id="firstViewport">
+                    <motion.div initial="hidden"
+  whileInView="visible" variants={fromLeft} viewport={{amount: "some"}}     className={firstView.titleWrapper} id="firstViewport">
                         <h1 className={firstView.title}>EXTENSIVO QUIMICA</h1>
                         <h1 className={firstView.titleBackgroundColor}>
                             ENEM <>{new Date().getFullYear()}</>
@@ -51,7 +64,7 @@ const Curso = () => {
                         >
                             QUERO FAZER PARTE DA TURMA
                         </Link>
-                    </div>
+                    </motion.div>
                     <div className={firstView.viewCross}>
                         <Image
                             src={'/LogoImage.png'}
