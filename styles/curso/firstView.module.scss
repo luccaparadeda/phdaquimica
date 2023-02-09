@@ -31,13 +31,16 @@
 		}
 	}
 	.viewCross {
-		margin-top: 50px;
+		margin-top: 25px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		left: 0;
 		bottom: 0;
 		width: 100%;
+		@media (min-width: 700px) {
+			margin-top: 0;
+		}
 	}
 }
 
