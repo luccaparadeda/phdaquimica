@@ -17,13 +17,6 @@
 		font-weight: 700;
 
 	}
-}
-
-.title {
-	&BackgroundColor {
-		background-color: var(--pink);
-		padding: 0 10px;
-	}
 	.leadToPrice {
 		background-color: var(--blue);
 		color: white;
@@ -38,14 +31,19 @@
 		}
 	}
 	.viewCross {
-		position: absolute;
+		margin-top: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		left: 0;
 		bottom: 0;
-		background-color: var(--dark-blue);
-		height: 60px;
-		width: 100vw;
+		width: 100%;
+	}
+}
+
+.title {
+	&BackgroundColor {
+		background-color: var(--pink);
+		padding: 0 10px;
 	}
 }

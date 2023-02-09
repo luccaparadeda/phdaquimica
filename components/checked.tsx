@@ -1,4 +1,6 @@
+import { motion } from 'framer-motion'
 import { CheckCircle } from 'react-feather'
+import { fadeIn } from '../styles/animation'
 import styles from '../styles/components/checked.module.scss'
 
 interface IChecked {
@@ -7,7 +9,9 @@ interface IChecked {
 }
 
 export const Checked = ({ text, icon }: IChecked) => (
-    <div className={styles.checkedWrapper}>
+    <motion.div       
+    initial="hidden"
+    whileInView="visible" variants={fadeIn} viewport={{amount: "some"}} className={styles.checkedWrapper}>
         {icon} <p>{text}</p>
-    </div>
+    </motion.div>
 )

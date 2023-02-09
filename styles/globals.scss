@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-align: center;
 	@media (min-width: 750px) {
 		font-size: 3rem;
@@ -38,8 +38,12 @@ h2 {
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1rem;
+	letter-spacing: 1px;
 	text-align: center;
+	@media (min-width: 700px) {
+		font-size: 1.5rem;
+	}
 }
 body {
 	margin: 0;

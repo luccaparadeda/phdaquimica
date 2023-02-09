@@ -6,26 +6,17 @@ import fourthView from '../styles/curso/fourthView.module.scss'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Anchor, BookOpen, CheckCircle, Coffee, Instagram } from 'react-feather'
+import { Anchor, BookOpen, CheckCircle, CloudRain, Coffee, Droplet, Feather, Filter, Instagram, Move } from 'react-feather'
 import { Card } from '../components/card'
 import { Checks } from '../views/checks'
 import { useEffect, useRef, useState } from 'react'
-import useElementOnScreen from '../hooks/useElementOnScreen'
 import { motion } from 'framer-motion'
+import { fadeIn, leftToRight, rightToLeft } from '../styles/animation'
 
 const Curso = () => {
-    const fromLeft = {
-        visible: { opacity: 1, transition: { duration: 2 } },
-        hidden: { opacity: 0 }
-      };
-      const fromRight = {
-        visible: { opacity: 1, transition: { duration: 2 } },
-        hidden: { opacity: 0 }
-      };
     return (
         <>
-            <motion.nav   initial="hidden"
-  whileInView="visible" variants={fromLeft} viewport={{amount: "all"}} className={curso.navbar}>
+            <div className={curso.navbar}>
                 <Image
                     src={'/LogoImage.png'}
                     alt="Logo"
@@ -41,12 +32,12 @@ const Curso = () => {
                     <Instagram width={20} height={20} />
                     <p>Instagram</p>
                 </Link>
-            </motion.nav>
+            </div>
 
             <div className={curso.container}>
                 <div className={firstView.firstView}>
                     <motion.div initial="hidden"
-  whileInView="visible" variants={fromLeft} viewport={{amount: "some"}}     className={firstView.titleWrapper} id="firstViewport">
+  whileInView="visible" variants={fadeIn} viewport={{amount: "some"}}     className={firstView.titleWrapper} id="firstViewport">
                         <h1 className={firstView.title}>EXTENSIVO QUIMICA</h1>
                         <h1 className={firstView.titleBackgroundColor}>
                             ENEM <>{new Date().getFullYear()}</>
@@ -67,12 +58,12 @@ const Curso = () => {
                     </motion.div>
                     <div className={firstView.viewCross}>
                         <Image
-                            src={'/LogoImage.png'}
+                            src={'/logoImage.png'}
                             alt="Logo"
-                            width={50}
-                            height={50}
+                            width={70}
+                            height={70}
                         />
-                    </div>
+                    </div>  
                 </div>
                 <div className={secondView.secondView}>
                     <h2>
@@ -82,39 +73,22 @@ const Curso = () => {
                     <div className={secondView.cardsWrapper}>
                         <Card>
                             <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
+                                <p>Química Geral</p> <Filter />
                             </div>
                         </Card>
                         <Card>
                             <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
+                                <p>Físico-Química</p> <Move />
                             </div>
                         </Card>
                         <Card>
                             <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
+                                <p>Química Orgânica</p> <Feather />
                             </div>
                         </Card>
                         <Card>
                             <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
-                            </div>
-                        </Card>
-                    </div>
-                    <div className={secondView.cardsWrapper}>
-                        <Card>
-                            <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
-                            </div>
-                        </Card>
-                        <Card>
-                            <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
-                            </div>
-                        </Card>
-                        <Card>
-                            <div className={secondView.card}>
-                                <p>Teste</p> <Anchor />
+                                <p>Química Ambiental</p> <Droplet />
                             </div>
                         </Card>
                     </div>
@@ -145,39 +119,47 @@ const Curso = () => {
                         <h2 id="bePartOf" className={curso.bePartOf}>
                             QUERO FAZER PARTE DA TURMA
                         </h2>
-                        <h2 className={curso.waranty}>GARANTIA DE 7 DIAS!</h2>
-                        <p>
+                        <motion.h2 initial="hidden"
+    whileInView="visible" variants={fadeIn} viewport={{amount: "some"}} className={curso.waranty}>GARANTIA DE 7 DIAS!</motion.h2>
+                        <motion.p initial="hidden"
+    whileInView="visible" variants={fadeIn} viewport={{amount: "some"}}>
                             Se você não gostar do curso, devolveremos o valor
                             integral para você, sem perguntas e sem
                             ressentimentos. Porém, garantimos que você não irá
                             se arrepender ao adquirir o curso. Nos últimos 2
                             anos, todos os alunos que se matricularam em cursos
                             do pH permaneceram até o dia do PRÉ PROVA!
-                        </p>
+                        </motion.p>
                     </div>
                 </div>
                 <div className={curso.prizes}>
                     <h2>O que você recebe ao se inscrever no curso?</h2>
-                    <div className={curso.card}>
-                        <h2>3 Ebooks PDF</h2>
-                        <BookOpen width={100} height={100} />
-                    </div>
-                    <div className={curso.card}>
-                        <h2>1 Caneca do Curso</h2>
-                        <Coffee width={100} height={100} />
+                    <div className={curso.cardsWrapper}>
+                        <motion.div initial="hidden"
+    whileInView="visible" variants={leftToRight} viewport={{amount: "some"}} className={curso.card}>
+                            <h2>3 Ebooks PDF</h2>
+                            <BookOpen width={100} height={100} />
+                        </motion.div>
+                        <motion.div initial="hidden"
+    whileInView="visible" variants={rightToLeft} viewport={{amount: "some"}} className={curso.card}>
+                            <h2>1 Caneca do Curso</h2>
+                            <Coffee width={100} height={100} />
+                        </motion.div>
                     </div>
                 </div>
                 <div className={fourthView.fourthView}>
                     <h2>INVESTIMENTO</h2>
-                    <div className={fourthView.card}>
-                        <h2>1 LOTE</h2>
-                        <h2>12x 12,99</h2>
-                        <span>Á vista 2.237,99</span>
-                    </div>
-                    <div className={fourthView.card}>
-                        <h2>2 LOTE</h2>
-                        <h2>12x 12,99</h2>
-                        <span>Á vista 2.237,99</span>
+                    <div className={fourthView.cardsWrapper}>
+                        <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{amount: "some"}} className={fourthView.card}>
+                            <h2>1 LOTE</h2>
+                            <h2>12x 12,99</h2>
+                            <span>Á vista 2.237,99</span>
+                        </motion.div>
+                        <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{amount: "some"}}  className={fourthView.card}>
+                            <h2>2 LOTE</h2>
+                            <h2>12x 12,99</h2>
+                            <span>Á vista 2.237,99</span>
+                        </motion.div>
                     </div>
                 </div>
             </div>
