@@ -56,14 +56,14 @@ const Curso = () => {
                             QUERO FAZER PARTE DA TURMA
                         </Link>
                     </motion.div>
-                    <div className={firstView.viewCross}>
+                    {/* <div className={firstView.viewCross}>
                         <Image
                             src={'/logoImage.png'}
                             alt="Logo"
                             width={70}
                             height={70}
                         />
-                    </div>  
+                    </div>   */}
                 </div>
                 <div className={secondView.secondView}>
                     <h2>
