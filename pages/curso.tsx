@@ -132,9 +132,11 @@ const Curso = () => {
                 </div>
                 <div className={curso.subjectsAbordedWrapper}>
                     <div className={curso.subjectCard}>
-                        <h2 className={curso.bePartOf}>
-                            QUERO FAZER PARTE DA TURMA
-                        </h2>
+                        <a href="#investments">
+                            <h2 className={curso.bePartOf}>
+                                QUERO FAZER PARTE DA TURMA
+                            </h2>
+                        </a>
                         <Image
                             src={'/garantia7dias.png'}
                             alt="7 dias de garantia"
@@ -192,7 +194,7 @@ const Curso = () => {
                                 viewport={{ amount: 'some' }}
                                 className={fourthView.card}
                             >
-                                <h2>A VISTA</h2>
+                                <h2>Á VISTA</h2>
                                 <h2>R$1199,99</h2>
                                 <span>* 20% DE DESCONTO</span>
                             </motion.div>
