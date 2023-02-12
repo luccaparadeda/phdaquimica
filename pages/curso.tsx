@@ -6,7 +6,18 @@ import fourthView from '../styles/curso/fourthView.module.scss'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Anchor, BookOpen, CheckCircle, CloudRain, Coffee, Droplet, Feather, Filter, Instagram, Move } from 'react-feather'
+import {
+    Anchor,
+    BookOpen,
+    CheckCircle,
+    CloudRain,
+    Coffee,
+    Droplet,
+    Feather,
+    Filter,
+    Instagram,
+    Move,
+} from 'react-feather'
 import { Card } from '../components/card'
 import { Checks } from '../views/checks'
 import { useEffect, useRef, useState } from 'react'
@@ -36,11 +47,19 @@ const Curso = () => {
 
             <div className={curso.container}>
                 <div className={firstView.firstView}>
-                    <motion.div initial="hidden"
-  whileInView="visible" variants={fadeIn} viewport={{amount: "some"}}     className={firstView.titleWrapper} id="firstViewport">
-                        <h1 className={firstView.title}>EXTENSIVO QUIMICA</h1>
-                        <h1 className={firstView.titleBackgroundColor}>
-                            ENEM <>{new Date().getFullYear()}</>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={fadeIn}
+                        viewport={{ amount: 'some' }}
+                        className={firstView.titleWrapper}
+                        id="firstViewport"
+                    >
+                        <h1 className={firstView.title}>
+                            EXTENSIVO QUÍMICA{' '}
+                            <span className={firstView.titleBackgroundColor}>
+                                {new Date().getFullYear()}
+                            </span>
                         </h1>
                         <p className={firstView.subtitle}>
                             Não deixe a química ser um obstáculo no seu caminho
@@ -50,7 +69,7 @@ const Curso = () => {
                             ao avançado.
                         </p>
                         <Link
-                            href={'#bePartOf'}
+                            href={'#investment'}
                             className={firstView.leadToPrice}
                         >
                             QUERO FAZER PARTE DA TURMA
@@ -95,12 +114,9 @@ const Curso = () => {
                 </div>
                 <div className={thirdView.thirdView}>
                     <div>
-                        <h2>
-                            Por quê você deve investir no curso 
-                        </h2>
+                        <h2>Por quê você deve investir no curso</h2>
                         <h2 className={curso.textPink}>
-                            EXTENSIVO QUÍMICA
-                            ENEM 2023?
+                            EXTENSIVO QUÍMICA ENEM 2023?
                         </h2>
                     </div>
                     <Checks
@@ -116,13 +132,21 @@ const Curso = () => {
                 </div>
                 <div className={curso.subjectsAbordedWrapper}>
                     <div className={curso.subjectCard}>
-                        <h2 id="bePartOf" className={curso.bePartOf}>
+                        <h2 className={curso.bePartOf}>
                             QUERO FAZER PARTE DA TURMA
                         </h2>
-                        <motion.h2 initial="hidden"
-    whileInView="visible" variants={fadeIn} viewport={{amount: "some"}} className={curso.waranty}>GARANTIA DE 7 DIAS!</motion.h2>
-                        <motion.p initial="hidden"
-    whileInView="visible" variants={fadeIn} viewport={{amount: "some"}}>
+                        <Image
+                            src={'/garantia7dias.png'}
+                            alt="7 dias de garantia"
+                            width={100}
+                            height={100}
+                        />
+                        <motion.p
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={fadeIn}
+                            viewport={{ amount: 'some' }}
+                        >
                             Se você não gostar do curso, devolveremos o valor
                             integral para você, sem perguntas e sem
                             ressentimentos. Porém, garantimos que você não irá
@@ -135,31 +159,57 @@ const Curso = () => {
                 <div className={curso.prizes}>
                     <h2>O que você recebe ao se inscrever no curso?</h2>
                     <div className={curso.cardsWrapper}>
-                        <motion.div initial="hidden"
-    whileInView="visible" variants={leftToRight} viewport={{amount: "some"}} className={curso.card}>
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={fadeIn}
+                            viewport={{ amount: 'some' }}
+                            className={curso.card}
+                        >
                             <h2>3 Ebooks PDF</h2>
                             <BookOpen width={100} height={100} />
                         </motion.div>
-                        <motion.div initial="hidden"
-    whileInView="visible" variants={rightToLeft} viewport={{amount: "some"}} className={curso.card}>
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            variants={fadeIn}
+                            viewport={{ amount: 'some' }}
+                            className={curso.card}
+                        >
                             <h2>1 Caneca do Curso</h2>
                             <Coffee width={100} height={100} />
                         </motion.div>
                     </div>
                 </div>
                 <div className={fourthView.fourthView}>
-                    <h2>INVESTIMENTO</h2>
+                    <h2 id="investment">INVESTIMENTO</h2>
                     <div className={fourthView.cardsWrapper}>
-                        <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{amount: "some"}} className={fourthView.card}>
-                            <h2>1 LOTE</h2>
-                            <h2>12x 12,99</h2>
-                            <span>Á vista 2.237,99</span>
-                        </motion.div>
-                        <motion.div initial="hidden" whileInView="visible" variants={fadeIn} viewport={{amount: "some"}}  className={fourthView.card}>
-                            <h2>2 LOTE</h2>
-                            <h2>12x 12,99</h2>
-                            <span>Á vista 2.237,99</span>
-                        </motion.div>
+                        <a href="https://www.asaas.com/c/175516515397">
+                            <motion.div
+                                initial="hidden"
+                                whileInView="visible"
+                                variants={fadeIn}
+                                viewport={{ amount: 'some' }}
+                                className={fourthView.card}
+                            >
+                                <h2>A VISTA</h2>
+                                <h2>R$1199,99</h2>
+                                <span>* 20% DE DESCONTO</span>
+                            </motion.div>
+                        </a>
+                        <a href="https://www.asaas.com/c/359052882536">
+                            <motion.div
+                                initial="hidden"
+                                whileInView="visible"
+                                variants={fadeIn}
+                                viewport={{ amount: 'some' }}
+                                className={fourthView.card}
+                            >
+                                <h2>PARCELADO</h2>
+                                <h2>10x 149,90</h2>
+                                <span>* VALOR INTEGRAL: R$1499,00</span>
+                            </motion.div>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -46,7 +46,9 @@
 
 .title {
 	&BackgroundColor {
-		background-color: var(--pink);
-		padding: 0 10px;
+		color: var(--off-white);
+		background-color: var(--blue);
+		border-radius: 40px;
+		padding: 0 20px;
 	}
 }

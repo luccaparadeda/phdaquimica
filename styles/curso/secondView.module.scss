@@ -11,6 +11,9 @@
 		color: var(--dark-blue);
 	}
 	@media (min-width: 1150px) {
+		padding: 70px 150px;	
+	}
+	@media (min-width: 1550px) {
 		padding: 70px 300px;	
 	}
 	.cardsWrapper {
