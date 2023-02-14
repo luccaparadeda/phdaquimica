@@ -198,7 +198,9 @@ const Curso = () => {
                             >
                                 <h2>Á VISTA</h2>
                                 <h2>R$1199,99</h2>
-                                <span>* 20% DE DESCONTO</span>
+                                <span>
+                                    * SEM TAXA DE MATRÍCULA, 20% DE DESCONTO
+                                </span>
                             </motion.div>
                         </a>
                         <a href="https://www.asaas.com/c/359052882536">
@@ -211,7 +213,10 @@ const Curso = () => {
                             >
                                 <h2>PARCELADO</h2>
                                 <h2>10x 149,90</h2>
-                                <span>* VALOR INTEGRAL: R$1499,00</span>
+                                <span>
+                                    * SEM TAXA DE MATRÍCULA, VALOR INTEGRAL:
+                                    R$1499,00{' '}
+                                </span>
                             </motion.div>
                         </a>
                     </div>
