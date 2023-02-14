@@ -15,7 +15,7 @@
 	flex-direction: column;
 	gap: 20px;
 	background-color: var(--dark-blue);
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-name: animate-fade;
 	animation-fill-mode: backwards;
 
@@ -37,6 +37,7 @@
 	justify-content: center;
 	font-weight: 700;
 	letter-spacing: 6px;
+	color: var(--off-white);
 
 	@media (max-width: 700px) {
 		width: 200px;

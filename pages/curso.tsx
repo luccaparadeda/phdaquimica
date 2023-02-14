@@ -127,12 +127,13 @@ const Curso = () => {
                             'Aulas interativas e exercícios práticos para fixar o conteúdo, te preparando para questões do ENEM.',
                             'Com o curso, você estará apto para desenvolver as 30 habilidades relacionadas a Química do ENEM!',
                             'Materiais exclusivos e atualizados, de acordo com as exigências dos vestibulares.',
+                            'Grupo de atendimento exclusivo',
                         ]}
                     />
                 </div>
                 <div className={curso.subjectsAbordedWrapper}>
                     <div className={curso.subjectCard}>
-                        <a href="#investments">
+                        <a href="#investment">
                             <h2 className={curso.bePartOf}>
                                 QUERO FAZER PARTE DA TURMA
                             </h2>
@@ -140,8 +141,8 @@ const Curso = () => {
                         <Image
                             src={'/garantia7dias.png'}
                             alt="7 dias de garantia"
-                            width={100}
-                            height={100}
+                            width={200}
+                            height={200}
                         />
                         <motion.p
                             initial="hidden"
@@ -149,12 +150,13 @@ const Curso = () => {
                             variants={fadeIn}
                             viewport={{ amount: 'some' }}
                         >
-                            Se você não gostar do curso, devolveremos o valor
-                            integral para você, sem perguntas e sem
-                            ressentimentos. Porém, garantimos que você não irá
-                            se arrepender ao adquirir o curso. Nos últimos 2
-                            anos, todos os alunos que se matricularam em cursos
-                            do pH permaneceram até o dia do PRÉ PROVA!
+                            Se você não gostar do curso nos primeiros 7 dias,
+                            devolveremos o valor integral para você, sem
+                            perguntas e sem ressentimentos. Porém, garantimos
+                            que você não irá se arrepender ao adquirir o curso.
+                            Nos últimos 2 anos, todos os alunos que se
+                            matricularam em cursos do pH permaneceram até o dia
+                            do PRÉ PROVA!
                         </motion.p>
                     </div>
                 </div>

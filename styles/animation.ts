@@ -4,8 +4,8 @@ export const fadeIn = {
   };
 
   export const leftToRight = {
-    visible: { transition: { duration: 1.5 }, x: 0 },
-    hidden: { x: -50 }
+    visible: { transition: { duration: 1.5 }, x: 0, opacity:1 },
+    hidden: { x: -50, opacity: 0 }
   }
 
   export const rightToLeft = {
