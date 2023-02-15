@@ -1,6 +1,6 @@
 .fourthView {
-	padding: 50px 0;
-		height: 100vh;
+	padding-top: 50px;
+		min-height: 100vh;
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
@@ -9,11 +9,14 @@
 		background-color: var(--dark-blue);
 		color: var(--off-white);
 
+		>h2 {
+			margin-bottom: 100px;
+		}
 		
 		.cardsWrapper {
 			display: flex;
 			gap: 20px;
-			@media (max-width: 800px) {
+			@media (max-width: 1100px) {
 				flex-direction: column;
 			}
 
@@ -29,7 +32,7 @@
 				justify-content: space-around;
 				align-items: center;
 				
-				@media (max-width: 800px) {
+				@media (max-width: 1100px) {
 					height: 40vh;
 					width: 80vw;
 				}

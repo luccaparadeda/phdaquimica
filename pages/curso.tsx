@@ -8,6 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
     Anchor,
+    AtSign,
     BookOpen,
     CheckCircle,
     CloudRain,
@@ -16,7 +17,9 @@ import {
     Feather,
     Filter,
     Instagram,
+    Mail,
     Move,
+    Phone,
 } from 'react-feather'
 import { Card } from '../components/card'
 import { Checks } from '../views/checks'
@@ -188,21 +191,6 @@ const Curso = () => {
                 <div className={fourthView.fourthView}>
                     <h2 id="investment">INVESTIMENTO</h2>
                     <div className={fourthView.cardsWrapper}>
-                        <a href="https://www.asaas.com/c/175516515397">
-                            <motion.div
-                                initial="hidden"
-                                whileInView="visible"
-                                variants={fadeIn}
-                                viewport={{ amount: 'some' }}
-                                className={fourthView.card}
-                            >
-                                <h2>Á VISTA</h2>
-                                <h2>R$1199,99</h2>
-                                <span>
-                                    * SEM TAXA DE MATRÍCULA, 20% DE DESCONTO
-                                </span>
-                            </motion.div>
-                        </a>
                         <a href="https://www.asaas.com/c/359052882536">
                             <motion.div
                                 initial="hidden"
@@ -219,7 +207,47 @@ const Curso = () => {
                                 </span>
                             </motion.div>
                         </a>
+                        <a href="https://www.asaas.com/c/175516515397">
+                            <motion.div
+                                initial="hidden"
+                                whileInView="visible"
+                                variants={fadeIn}
+                                viewport={{ amount: 'some' }}
+                                className={fourthView.card}
+                            >
+                                <h2>À VISTA</h2>
+                                <h2>R$1199,99</h2>
+                                <span>
+                                    * SEM TAXA DE MATRÍCULA, 20% DE DESCONTO
+                                </span>
+                            </motion.div>
+                        </a>
                     </div>
+                    <footer className={curso.footerContainer}>
+                        <div>
+                            <p>Me encontre</p>
+
+                            <a>
+                                <Phone />
+                                +55 51993467771
+                            </a>
+                            <a>
+                                <Mail /> contato@phdaquimica.com.br
+                            </a>
+                        </div>
+                        <div>
+                            <p>Me Siga</p>
+
+                            <a>
+                                <Instagram />
+                                @phdaquimica
+                            </a>
+                        </div>
+                        <span>
+                            phdaquímica <AtSign width={10} height={10} />{' '}
+                            {new Date().getFullYear()}
+                        </span>
+                    </footer>
                 </div>
             </div>
         </>
