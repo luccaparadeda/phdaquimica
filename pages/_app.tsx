@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
+                <meta property="og:image" content="public\LogoImage.png" />
                 <meta
                     name="keywords"
                     content="Química, Enem, Vestibular, Prova, Enem 2022, Enem 2023"

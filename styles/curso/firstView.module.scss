@@ -21,8 +21,9 @@
 	.leadToPrice {
 		background-color: var(--blue);
 		color: white;
+		box-shadow: 0 15px 14px var(--dark-blue);
 		padding: 10px 15px;
-		border-radius: 30px;
+		border-radius: 2px;
 		width: 500px;
 		height: 30px;
 		display: flex;
@@ -52,8 +53,8 @@
 .title {
 	&BackgroundColor {
 		color: var(--off-white);
-		background-color: var(--blue);
-		border-radius: 40px;
+		background-color: #4775AE;
+		border-radius: 15px;
 		padding: 0 20px;
 	}
 }
