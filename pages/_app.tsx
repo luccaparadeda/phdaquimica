@@ -12,6 +12,16 @@ export default function App({ Component, pageProps }: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
+                <meta
+                    property="og:title"
+                    content="pH da química, química pura e simples"
+                />
+                <link
+                    rel="shortcut icon"
+                    href="public\LogoImage.png"
+                    type="image/x-icon"
+                />
+                <meta name="theme-color" content="#1A48AF" />
                 <meta property="og:image" content="public\LogoImage.png" />
                 <meta
                     name="keywords"
