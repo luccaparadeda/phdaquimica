@@ -32,7 +32,7 @@ const Curso = () => {
         <>
             <div className={curso.navbar}>
                 <Image
-                    src={'/LogoWhite.png'}
+                    src={'/logoWhite.png'}
                     alt="Logo"
                     width={100}
                     height={100}
@@ -123,7 +123,7 @@ const Curso = () => {
                         </h2>
                     </div>
                     <Checks
-                        image="/LogoImage.png"
+                        image="/logoImage.png"
                         icon={<CheckCircle color="green" />}
                         items={[
                             'Metodologia de ensino eficiente, para compreender e aplicar os conceitos químicos.',
