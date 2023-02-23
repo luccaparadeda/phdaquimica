@@ -119,11 +119,10 @@ const Curso = () => {
                     <div>
                         <h2>Por quê você deve investir no curso</h2>
                         <h2 className={curso.textPink}>
-                            EXTENSIVO QUÍMICA ENEM 2023?
+                            EXTENSIVO QUÍMICA 2023?
                         </h2>
                     </div>
                     <Checks
-                        image="/logoImage.png"
                         icon={<CheckCircle color="green" />}
                         items={[
                             'Metodologia de ensino eficiente, para compreender e aplicar os conceitos químicos.',
@@ -173,7 +172,7 @@ const Curso = () => {
                             viewport={{ amount: 'some' }}
                             className={curso.card}
                         >
-                            <h2>3 Ebooks PDF</h2>
+                            <h2>3 Ebooks em PDF</h2>
                             <BookOpen width={100} height={100} />
                         </motion.div>
                         <motion.div
@@ -225,7 +224,7 @@ const Curso = () => {
                     </div>
                     <footer className={curso.footerContainer}>
                         <div>
-                            <p>Me encontre</p>
+                            <p>Qualquer duvida me chame em</p>
 
                             <a>
                                 <Phone />
