@@ -161,3 +161,14 @@
 		opacity: .5;
 	}
 }
+
+.datesWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 20%;
+	outline: 1px solid #1A48AF;
+}

@@ -18,11 +18,11 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <link
                     rel="shortcut icon"
-                    href="public\LogoImage.png"
+                    href="public\logoImage.png"
                     type="image/x-icon"
                 />
                 <meta name="theme-color" content="#1A48AF" />
-                <meta property="og:image" content="public\LogoImage.png" />
+                <meta property="og:image" content="public\logoImage.png" />
                 <meta
                     name="keywords"
                     content="Química, Enem, Vestibular, Prova, Enem 2022, Enem 2023"

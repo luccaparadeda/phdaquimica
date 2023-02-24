@@ -9,7 +9,7 @@ interface IChecks {
 
 export const Checks = ({ items, icon }: IChecks) => (
     <div className={styles.container}>
-        <Image src="public\logoImage.png" alt={''} width={100} height={100} />
+        <Image src="/logoImage.png" alt={''} width={100} height={100} />
         <div className={styles.checksWrapper}>
             {items.map((item) => (
                 <Checked key={item} text={item} icon={icon} />

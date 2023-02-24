@@ -115,6 +115,10 @@ const Curso = () => {
                         </Card>
                     </div>
                 </div>
+                <div className={curso.datesWrapper}>
+                    <h2>INÍCIO: 13/03/2023</h2>
+                    <h2>TÉRMINO: vestibular da UFRGS</h2>
+                </div>
                 <div className={thirdView.thirdView}>
                     <div>
                         <h2>Por quê você deve investir no curso</h2>
@@ -215,7 +219,7 @@ const Curso = () => {
                                 className={fourthView.card}
                             >
                                 <h2>À VISTA</h2>
-                                <h2>R$1199,99</h2>
+                                <h2>R$1199,20</h2>
                                 <span>
                                     * SEM TAXA DE MATRÍCULA, 20% DE DESCONTO
                                 </span>
@@ -224,7 +228,7 @@ const Curso = () => {
                     </div>
                     <footer className={curso.footerContainer}>
                         <div>
-                            <p>Qualquer duvida me chame em</p>
+                            <p>Qualquer dúvida me chame em</p>
 
                             <a>
                                 <Phone />
