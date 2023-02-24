@@ -176,7 +176,7 @@ const Curso = () => {
                             viewport={{ amount: 'some' }}
                             className={curso.card}
                         >
-                            <h2>3 Ebooks em PDF</h2>
+                            <h2>3 E-books em PDF</h2>
                             <BookOpen width={100} height={100} />
                         </motion.div>
                         <motion.div
