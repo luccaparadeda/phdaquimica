@@ -18,18 +18,18 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <link
                     rel="shortcut icon"
-                    href="public\logoImage.png"
+                    href="public\9.png"
                     type="image/x-icon"
                 />
                 <meta name="theme-color" content="#1A48AF" />
-                <meta property="og:image" content="public\logoImage.png" />
+                <meta property="og:image" content="public\9.png" />
                 <meta
                     name="keywords"
                     content="Química, Enem, Vestibular, Prova, Enem 2022, Enem 2023"
                 ></meta>
                 <meta name="author" content="Lucca Paradeda"></meta>
                 <link rel="parent" hrefLang="pt" />
-                <link rel="icon" href="/logoImage.png" />
+                <link rel="icon" href="/9.png" />
             </Head>
             <Component {...pageProps} />
         </>

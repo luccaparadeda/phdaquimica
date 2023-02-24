@@ -80,7 +80,7 @@ const Curso = () => {
                     </motion.div>
                     {/* <div className={firstView.viewCross}>
                         <Image
-                            src={'/logoImage.png'}
+                            src={'/9.png'}
                             alt="Logo"
                             width={70}
                             height={70}
