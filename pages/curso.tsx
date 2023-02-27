@@ -235,7 +235,7 @@ const Curso = () => {
                                 +55 51993467771
                             </a>
                             <a>
-                                <Mail /> raphaeloliveira.trabalho@gmail.com
+                                <Mail /> contato@phdaquimica.com.br
                             </a>
                         </div>
                         <div>
