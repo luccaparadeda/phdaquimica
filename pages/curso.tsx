@@ -23,13 +23,31 @@ import {
 } from 'react-feather'
 import { Card } from '../components/card'
 import { Checks } from '../views/checks'
-import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { fadeIn, leftToRight, rightToLeft } from '../styles/animation'
+import Script from 'next/script'
 
 const Curso = () => {
     return (
         <>
+            <Script
+                strategy="afterInteractive"
+                src="https://www.googletagmanager.com/gtag/js?id=G-LNBEH0L4R7"
+            />
+            <Script
+                id="google-analytics"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+													window.dataLayer = window.dataLayer || [];
+													function gtag(){dataLayer.push(arguments);}
+														gtag('js', new Date());
+														gtag('config', 'G-XXXXXXX', {
+														page_path: window.location.pathname,
+													});
+										`,
+                }}
+            />
             <div className={curso.navbar}>
                 <Image
                     src={'/logoWhite.png'}
@@ -47,7 +65,6 @@ const Curso = () => {
                     <p>Instagram</p>
                 </Link>
             </div>
-
             <div className={curso.container}>
                 <div className={firstView.firstView}>
                     <motion.div
