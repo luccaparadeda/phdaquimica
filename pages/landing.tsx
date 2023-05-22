@@ -6,10 +6,15 @@ const Landing = () => {
     return(
         <div className={styles.container}>
             <header className={styles.header}>
-                <h1>Professor PH</h1>
-                <Link href='/landing' className={styles.active}>Home</Link>
-                <Link href="/aa">About</Link>
-                <Link href="/bb">Projects</Link>
+                <div className={styles.wideHeader}>
+                    <h1>Professor PH</h1>
+                    <Link href='/landing' className={styles.active}>Home</Link>
+                    <Link href="/aa">Extensivo</Link>
+                    <Link href="/bb">Intensivo</Link>
+                </div>
+                <div className={styles.smallHeader}>
+                    <h1>Professor PH</h1>
+                </div>
             </header>        
             <div className={styles.body}>
                 <section className={styles.presentation}>
@@ -22,6 +27,7 @@ const Landing = () => {
                 <section className={styles.imagesContainer}>
                     <Image src="/circle.svg" alt="Picture of the author" width={700} height={500} />
                     <Image src="/PH.svg" alt="Prof PH" width={500} height={800} />
+                    <Image className={styles.smallImage} src="/garantia7dias.png" alt="Prof PH" width={250} height={250} />
                 </section>
             </div>
 
