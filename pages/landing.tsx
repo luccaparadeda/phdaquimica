@@ -14,21 +14,23 @@ const Landing = () => {
                 </div>
                 <div className={styles.smallHeader}>
                     <h1>Professor PH</h1>
+                    <div className={styles.menu}>
+                    </div>
                 </div>
             </header>        
             <div className={styles.body}>
                 <section className={styles.presentation}>
-                    <p>Olá,</p>
-                    <h2>Eu sou o PH</h2>
-                    <span>Professor de química</span>
-                    <p>Hello, I am an aspiring UI/UX designer with the ability to translate the designs into functional Front-end</p>
-                    <button>Me conheça</button>
+                    <Image className={styles.smallImage} src="/garantia7dias.png" alt="Prof PH" width={150} height={150} />
+                    <div className={styles.text}>
+                        <p>Olá,</p>
+                        <h2 className={styles.title}>Eu sou o PH</h2>
+                        <span>Professor de química</span>
+                        <p className={styles.subtitle}>Hello, I am an aspiring UI/UX designer with the ability to translate the designs into functional Front-end</p>
+                        <button className={styles.button}>Me conheça</button>
+                    </div>
                 </section>
-                <section className={styles.imagesContainer}>
-                    <Image src="/circle.svg" alt="Picture of the author" width={700} height={500} />
-                    <Image src="/PH.svg" alt="Prof PH" width={500} height={800} />
-                    <Image className={styles.smallImage} src="/garantia7dias.png" alt="Prof PH" width={250} height={250} />
-                </section>
+                <Image className={styles.phImage} src="/PH.svg" alt="Prof PH" width={500} height={800} />
+                <Image className={styles.circleImage} src="/circle.svg" alt="Picture of the author" width={700} height={500} />
             </div>
 
         </div>
