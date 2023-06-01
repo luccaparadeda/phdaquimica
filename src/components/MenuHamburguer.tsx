@@ -1,6 +1,6 @@
 'use client';
 import { FC, useState } from 'react';
-import { MenuItem } from '../page';
+import { MenuItem } from '@/app/page';
 import Link from 'next/link';
 
 import { Menu, X } from 'lucide-react';
