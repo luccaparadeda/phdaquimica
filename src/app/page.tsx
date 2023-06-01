@@ -88,7 +88,8 @@ export default function Home() {
 						width={250}
 						height={250}
 						className='rounded-full border-2 border-white'
-						priority={true}
+						priority
+						loading='eager'
 					/>
 					<p className='text-3xl w-10/12 font-sans font-medium animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500  bg-clip-text text-transparent text-center sm:text-3xl md:text-4xl lg:text-5xl '>
 						Olá eu sou o PH e serei seu professor durante essa trajetória
