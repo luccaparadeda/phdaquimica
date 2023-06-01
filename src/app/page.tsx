@@ -90,7 +90,7 @@ export default function Home() {
 					</p>
 				</div>
 				<section className='flex min-h-screen gap-20 w-full flex-col items-center mt-20	p-10'>
-					<h2 className='text-white font-semibold text-3xl w-full text-right'>
+					<h2 className='text-white font-semibold text-3xl w-full text-center'>
 						Cursos
 					</h2>
 					<div className='flex gap-10 flex-col p-10 items-center shadow-2xl shadow-blue-950 rounded-3xl'>
