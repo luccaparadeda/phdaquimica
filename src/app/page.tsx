@@ -69,7 +69,7 @@ export default function Home() {
 				</nav>
 
 				<div className='flex flex-col items-center my-16 justify-center w-full gap-20'>
-					<h1 className='text-4xl font-sans font-bold px-10 text-white text-center sm:text-5xl md:text-6xl lg:text-7xl'>
+					<h1 className='text-4xl font-sans w-10/12 font-bold px-10 text-white text-center sm:text-5xl md:text-6xl lg:text-7xl lg:w-8/12'>
 						Está pronto para conhecer os melhores cursos de{' '}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
 							Quimica?
