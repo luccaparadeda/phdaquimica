@@ -21,54 +21,11 @@ import MenuHamburguer from '@/components/MenuHamburguer';
 import Button from '@/components/ui/Button';
 import Footer from '@/components/Footer';
 
-export interface MenuItem {
-	name: string;
-	href: string;
-}
-
-const menudata: MenuItem[] = [
-	{
-		name: 'Home',
-		href: '#'
-	},
-	{
-		name: 'Sobre',
-		href: '#'
-	},
-	{
-		name: 'Extensivo',
-		href: '#'
-	},
-	{
-		name: 'Intensivo',
-		href: '#'
-	}
-];
-
 export default function Home() {
 	return (
-		<div className='w-full min-h-screen bg-slate-950 flex flex-col items-center'>
+		<div className='w-full min-h-scree flex flex-col items-center'>
 			<div className='container h-full flex flex-col'>
-				<nav className='grid grid-cols-2  items-center p-4 lg:grid-cols-3'>
-					<div className='flex items-center'>
-						<FlaskRound color='white' />
-						<h1 className='text-2xl font-bold text-white ml-2'>PHdaquimica</h1>
-					</div>
-					<div className='hidden items-end h-full w-full gap-4 justify-end sm:flex lg:justify-between'>
-						{menudata.map(({ href, name }) => (
-							<Link
-								key={name}
-								className='text-white tracking-widest text-sm font-semibold group transition duration-500'
-								href={href}>
-								{name}
-								<span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-slate-500'></span>
-							</Link>
-						))}
-					</div>
-					<MenuHamburguer menuItems={menudata} />
-				</nav>
-
-				<div className='flex flex-col items-center my-16 justify-center w-full gap-20'>
+				<div className='flex flex-col items-center mb-16 mt-32 justify-center w-full gap-20'>
 					<h1 className='text-4xl font-sans w-10/12 font-bold px-10 text-white text-center sm:text-5xl md:text-6xl lg:text-7xl lg:w-8/12'>
 						Está pronto para conhecer os melhores cursos de{' '}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
