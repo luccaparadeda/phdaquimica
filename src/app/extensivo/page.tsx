@@ -17,8 +17,8 @@ const page: FC<pageProps> = ({}) => {
 	const year = new Date().getFullYear();
 
 	return (
-		<div className='flex flex-col'>
-			<section className=' mb-28 mt-32 flex flex-col items-center gap-16 justify-center'>
+		<div className='flex flex-col gap-32'>
+			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-28'>
 				<h1 className='text-white text-4xl font-sans w-10/12 font-black px-10 text-center sm:text-5xl md:text-6xl lg:text-7xl'>
 					Extensivo Química {year}
 				</h1>
@@ -29,40 +29,40 @@ const page: FC<pageProps> = ({}) => {
 					Quero fazer parte da turma
 				</Button>
 			</section>
-			<section className='flex flex-wrap items-center w-full min-h-screen justify-evenly'>
-				<h2 className='w-full text-center text-2xl font-semibold'>
+			<section className='flex flex-wrap items-center w-full justify-evenly gap-16'>
+				<h2 className='w-full text-center text-2xl font-semibold md:text-3xl lg:text-4xl'>
 					Conteúdos abordados
 				</h2>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2'>
+				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
 					<TreePine
 						color='white'
-						className='flex-1'
+						className='flex-1 md:h-10 md:w-10'
 					/>
-					<p className='flex-1 text-center'>Química Geral</p>
+					<p className='flex-1 text-center md:text-lg'>Química Geral</p>
 				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2'>
+				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
 					<TreePine
 						color='white'
-						className='flex-1'
+						className='flex-1 md:h-10 md:w-10'
 					/>
-					<p className='flex-1 text-center'>Físico-Química</p>
+					<p className='flex-1 text-center md:text-lg'>Físico-Química</p>
 				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2'>
+				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
 					<TreePine
 						color='white'
-						className='flex-1'
+						className='flex-1 md:h-10 md:w-10'
 					/>
-					<p className='flex-1 text-center'>Química Orgânica</p>
+					<p className='flex-1 text-center md:text-lg'>Química Orgânica</p>
 				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2'>
+				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
 					<TreePine
 						color='white'
-						className='flex-1'
+						className='flex-1 md:h-10 md:w-10'
 					/>
-					<p className='flex-1 text-center'>Química Ambiental</p>
+					<p className='flex-1 text-center lg:text-lg'>Química Ambiental</p>
 				</div>
 			</section>
-			<section className='my-20 flex flex-col items-center gap-4'>
+			<section className='flex flex-col items-center gap-4'>
 				<p className='text-2xl text-center'>
 					<span className='font-semibold'>Início:</span> <br /> 13/03/{year}
 				</p>
@@ -78,26 +78,28 @@ const page: FC<pageProps> = ({}) => {
 						Extensivo Química {year}
 					</span>
 				</p>
-				<ul className='flex flex-col w-9/12 gap-4'>
+				<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 '>
 					<li className='flex gap-2'>
 						<Check className='text-white min-w-fit' />
-						<p className='text-xl'>Metodologia Eficiente</p>
+						<p className='text-xl md:text-2xl'>Metodologia Eficiente</p>
 					</li>
 					<li className='flex gap-2'>
 						<Check className='text-white min-w-fit' />
-						<p className='text-xl'>Aplicação dos conceitos</p>
+						<p className='text-xl md:text-2xl'>Aplicação dos conceitos</p>
 					</li>
 					<li className='flex gap-2'>
 						<Check className='text-white min-w-fit' />
-						<p className='text-xl'>Aulas Interativas</p>
+						<p className='text-xl md:text-2xl'>Aulas Interativas</p>
 					</li>
 					<li className='flex gap-2'>
 						<Check className='text-white min-w-fit' />
-						<p className='text-xl'>Exercícios Práticos</p>
+						<p className='text-xl md:text-2xl'>Exercícios Práticos</p>
 					</li>
 					<li className='flex gap-2'>
 						<Check className='text-white min-w-fit' />
-						<p className='text-xl'>Materiais exclusivos atualizados</p>
+						<p className='text-xl md:text-2xl'>
+							Materiais exclusivos atualizados
+						</p>
 					</li>
 					<li className='flex gap-2'>
 						<Check className='text-white min-w-fit' />
@@ -105,7 +107,7 @@ const page: FC<pageProps> = ({}) => {
 					</li>
 				</ul>
 			</section>
-			<section className='flex flex-col items-center gap-16 my-32'>
+			<section className='flex flex-col items-center gap-16'>
 				<p className='text-2xl font-semibold underline underline-offset-8'>
 					Seu Investimento Seguro
 				</p>
@@ -137,7 +139,7 @@ const page: FC<pageProps> = ({}) => {
 					</p>
 				</div>
 			</section>
-			<section className='flex flex-col my-32 items-center gap-16'>
+			<section className='flex flex-col items-center gap-16'>
 				<p className='text-2xl text-center animate-text bg-gradient-to-r from-teal-500 via-green-500 to-orange-500 bg-clip-text text-transparent font-black'>
 					Investimento
 				</p>

@@ -43,7 +43,7 @@ export default function RootLayout({
 	return (
 		<html lang='pt-BR'>
 			<body className={`${quicksand.className} bg-slate-950`}>
-				<nav className='grid grid-cols-2  items-center p-4 lg:grid-cols-3 bg-slate-900 absolute'>
+				<nav className='grid grid-cols-2 w-full items-center p-4 lg:grid-cols-3 bg-slate-900 absolute'>
 					<div className='flex items-center'>
 						<FlaskRound color='white' />
 						<h1 className='text-2xl font-bold text-white ml-2'>PHdaquimica</h1>
