@@ -6,7 +6,7 @@ import { FlaskRound } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import path from 'path';
-import Navbar from '@/components/navbar';
+import Navbar from '@/components/Navbar';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
