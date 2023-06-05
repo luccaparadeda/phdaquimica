@@ -1,7 +1,10 @@
 import Footer from '@/components/Footer';
 import Button from '@/components/ui/Button';
 import {
+	ArrowBigRight,
+	ArrowRight,
 	ArrowRightCircle,
+	ArrowRightFromLine,
 	Book,
 	Check,
 	ChevronRight,
@@ -18,14 +21,14 @@ const page: FC<pageProps> = ({}) => {
 
 	return (
 		<div className='flex flex-col gap-32'>
-			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-28'>
-				<h1 className='text-white text-4xl font-sans w-10/12 font-black px-10 text-center sm:text-5xl md:text-6xl lg:text-7xl'>
+			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-32'>
+				<h1 className='animate-text bg-gradient-to-r from-teal-300 via-blue-300 to-red-300 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
 					Extensivo Química {year}
 				</h1>
-				<p className='text-gray-300 drop-shadow-xl text-center font-semibold text-xl'>
+				<p className='text-gray-400 drop-shadow-xl text-center font-semibold text-xl md:text-2xl'>
 					O curso mais completo da atualidade
 				</p>
-				<Button className='animate-text bg-gradient-to-r from-blue-700 via-emerald-700 to-orange-700'>
+				<Button className='animate-text bg-gradient-to-r from-blue-700 via-emerald-700 to-orange-700 md:text-lg'>
 					Quero fazer parte da turma
 				</Button>
 			</section>
@@ -62,115 +65,136 @@ const page: FC<pageProps> = ({}) => {
 					<p className='flex-1 text-center lg:text-lg'>Química Ambiental</p>
 				</div>
 			</section>
-			<section className='flex flex-col items-center gap-4'>
+			<section className='flex flex-col items-center gap-4 md:flex-row md:gap-16 md:justify-center md:my-24'>
 				<p className='text-2xl text-center'>
 					<span className='font-semibold'>Início:</span> <br /> 13/03/{year}
 				</p>
+				<ArrowRight className='text-white w-16 h-16 hidden md:block' />
 				<p className='text-2xl text-center'>
 					<span className='font-semibold'>Término:</span>
 					<br /> vestibular da UFRGS
 				</p>
 			</section>
-			<section className='flex flex-col items-center gap-6'>
-				<p className='text-2xl font-semibold text-center px-10'>
+			<section className='flex flex-col items-center gap-6 md:gap-12'>
+				<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
 					Porque você deve investir no curso{' '}
 					<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
 						Extensivo Química {year}
 					</span>
 				</p>
-				<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 '>
-					<li className='flex gap-2'>
-						<Check className='text-white min-w-fit' />
-						<p className='text-xl md:text-2xl'>Metodologia Eficiente</p>
+				<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
+					<li className='flex gap-2 md:gap-6 lg:gap-12'>
+						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<p className='text-xl md:text-2xl lg:text-3xl'>
+							Metodologia Eficiente
+						</p>
 					</li>
-					<li className='flex gap-2'>
-						<Check className='text-white min-w-fit' />
-						<p className='text-xl md:text-2xl'>Aplicação dos conceitos</p>
+					<li className='flex gap-2 md:gap-6 lg:gap-12'>
+						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<p className='text-xl md:text-2xl lg:text-3xl'>
+							Aplicação dos conceitos
+						</p>
 					</li>
-					<li className='flex gap-2'>
-						<Check className='text-white min-w-fit' />
-						<p className='text-xl md:text-2xl'>Aulas Interativas</p>
+					<li className='flex gap-2 md:gap-6 lg:gap-12'>
+						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<p className='text-xl md:text-2xl lg:text-3xl'>Aulas Interativas</p>
 					</li>
-					<li className='flex gap-2'>
-						<Check className='text-white min-w-fit' />
-						<p className='text-xl md:text-2xl'>Exercícios Práticos</p>
+					<li className='flex gap-2 md:gap-6 lg:gap-12'>
+						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<p className='text-xl md:text-2xl lg:text-3xl'>
+							Exercícios Práticos
+						</p>
 					</li>
-					<li className='flex gap-2'>
-						<Check className='text-white min-w-fit' />
-						<p className='text-xl md:text-2xl'>
+					<li className='flex gap-2 md:gap-6 lg:gap-12'>
+						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<p className='text-xl md:text-2xl lg:text-3xl'>
 							Materiais exclusivos atualizados
 						</p>
 					</li>
-					<li className='flex gap-2'>
-						<Check className='text-white min-w-fit' />
-						<p className='text-xl'>Grupo de atendimento exclusivo</p>
+					<li className='flex gap-2 md:gap-6 lg:gap-12'>
+						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<p className='text-xl md:text-2xl lg:text-3xl'>
+							Grupo de atendimento exclusivo
+						</p>
 					</li>
 				</ul>
 			</section>
-			<section className='flex flex-col items-center gap-16'>
-				<p className='text-2xl font-semibold underline underline-offset-8'>
+			<section className='flex flex-col items-center gap-16 md:gap-24'>
+				<p className='text-2xl font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
 					Seu Investimento Seguro
 				</p>
 
-				<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 '>
-					<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
+				<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 md:w-80 md:h-64 md:justify-center md:gap-16'>
+					<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
 						Garantia de 7 dias.
 					</p>
-					<p className='text-center text-md text-white font-semibold w-9/12 '>
+					<p className='text-center text-md text-white font-semibold w-9/12 md:text-lg lg:text-xl'>
 						Nos ultimos {year - 2021} anos todos os alunos matriculados ficaram
 						até o dia do pré prova!
 					</p>
 				</div>
 			</section>
-			<section className='flex flex-col items-center gap-10'>
-				<p className='text-center text-xl px-10 font-bold'>
+			<section className='flex flex-col items-center gap-10 md:my-16 md:gap-32'>
+				<p className='text-center text-xl px-10 font-bold md:text-3xl lg:text-4xl'>
 					O que você recebe ao se inscrever no curso?
 				</p>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-blue-950  bg-white rounded-3xl'>
-					<Book className='flex-1 text-blue-800 w-10 h-10' />
-					<p className='flex-1 text-center text-slate-900 font-semibold px-5'>
-						3 E-books em PDF
-					</p>
-				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-blue-950  bg-white rounded-3xl'>
-					<Coffee className='flex-1 text-blue-800 w-10 h-10' />
-					<p className='flex-1 text-center text-slate-900  font-semibold px-5'>
-						1 Caneca do Curso
-					</p>
+				<div className='flex flex-wrap gap-12 items-center justify-center md:gap-32'>
+					<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-black  bg-gray-800 rounded-3xl md:w-64 md:h-64 md:justify-evenly'>
+						<Book className='flex-1 text-blue-500 w-10 h-10 md:w-20 md:h-20 md:flex-initial' />
+						<p className='flex-1 text-center animate-text bg-gradient-to-l from-teal-500 via-blue-500 to-red-500 bg-clip-text text-transparent font-semibold px-5 md:flex-initial md:text-xl'>
+							3 E-books em PDF
+						</p>
+					</div>
+					<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-black  bg-gray-800 rounded-3xl md:w-64 md:h-64 md:justify-evenly'>
+						<Coffee className='flex-1 text-red-500 w-10 h-10 md:w-20 md:h-20 md:flex-initial' />
+						<p className='flex-1 text-center animate-text bg-gradient-to-l from-teal-500 via-blue-500 to-red-500 bg-clip-text text-transparent  font-semibold px-5 md:flex-initial md:text-xl'>
+							1 Caneca do Curso
+						</p>
+					</div>
 				</div>
 			</section>
-			<section className='flex flex-col items-center gap-16'>
+			<section className='flex flex-col items-center gap-24'>
 				<p className='text-2xl text-center animate-text bg-gradient-to-r from-teal-500 via-green-500 to-orange-500 bg-clip-text text-transparent font-black'>
 					Investimento
 				</p>
-				<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl border-x-2 rounded-3xl px-2'>
-					<p className=' text-center text-xl'>À vista</p>
-					<p className='text-xl font-semibold font-mono'>R$1199,20</p>
-					<Button
-						variant={'ghost'}
-						className='shadow-xl rounded-full font-bold shadow-green-700/50'>
-						Comprar{' '}
-						<ArrowRightCircle
-							size={20}
-							className='ml-2'
-						/>
-					</Button>
-				</div>
-				<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl border-x-2 rounded-3xl px-2'>
-					<p className=' text-center text-xl'>Parcelado</p>
-					<div className='flex flex-col gap-1 items-center'>
-						<p className='text-xl font-semibold font-mono'>10x R$149,90</p>
-						<span className='text-center text-gray-200'>Total: R$1499,00</span>
+				<div className='flex flex-wrap px-5 gap-16 justify-center md:px-0 md:gap-32'>
+					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
+						<p className=' text-center text-xl'>À vista</p>
+						<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
+							R$1199,20
+						</p>
+						<Button
+							variant={'ghost'}
+							size={'lg'}
+							className='shadow-xl rounded-full font-bold shadow-green-400/50'>
+							Comprar{' '}
+							<ArrowRightCircle
+								size={20}
+								className='ml-2'
+							/>
+						</Button>
 					</div>
-					<Button
-						variant={'ghost'}
-						className='shadow-xl rounded-full font-bold shadow-green-700/50'>
-						Comprar{' '}
-						<ArrowRightCircle
-							size={20}
-							className='ml-2'
-						/>
-					</Button>
+					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
+						<p className=' text-center text-xl'>Parcelado</p>
+						<div className='flex flex-col gap-1 items-center'>
+							<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
+								10x R$149,90
+							</p>
+							<span className='text-center text-gray-200'>
+								Total: R$1499,00
+							</span>
+						</div>
+						<Button
+							variant={'ghost'}
+							className='shadow-xl rounded-full font-bold shadow-green-400/50'
+							size={'lg'}>
+							Comprar{' '}
+							<ArrowRightCircle
+								size={20}
+								className='ml-2'
+							/>
+						</Button>
+					</div>
 				</div>
 			</section>
 			<Footer />
