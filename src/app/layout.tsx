@@ -1,11 +1,6 @@
 import Providers from '@/components/Providers';
 import './globals.css';
 import { Quicksand } from 'next/font/google';
-import MenuHamburguer from '@/components/MenuHamburguer';
-import { FlaskRound } from 'lucide-react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import path from 'path';
 import Navbar from '@/components/Navbar';
 
 const quicksand = Quicksand({ subsets: ['latin'] });

@@ -1,6 +1,6 @@
 'use client';
 import { FC, useState } from 'react';
-import { MenuItem } from '@/app/layout';
+import { MenuItem } from '@/components/Navbar';
 import Link from 'next/link';
 
 import { Menu, X } from 'lucide-react';
