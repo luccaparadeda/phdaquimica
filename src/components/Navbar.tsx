@@ -17,16 +17,12 @@ const menudata: MenuItem[] = [
 		href: '/'
 	},
 	{
-		name: 'Sobre',
-		href: '/sobre'
+		name: 'Intensivo',
+		href: '/intensivo'
 	},
 	{
 		name: 'Extensivo',
 		href: '/extensivo'
-	},
-	{
-		name: 'Intensivo',
-		href: '/intensivo'
 	}
 ];
 
@@ -35,28 +31,32 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
 	const pathname = usePathname();
 	return (
-		<nav className='grid grid-cols-2 w-full items-center p-4 lg:grid-cols-3 bg-slate-900 absolute'>
-			<div className='flex items-center'>
-				<FlaskRound color='white' />
-				<h1 className='text-2xl font-bold text-white ml-2'>PHdaquimica</h1>
-			</div>
-			<div className='hidden items-end h-full w-full gap-4 justify-end sm:flex lg:justify-between'>
-				{menudata.map(({ href, name }) => (
-					<Link
-						key={name}
-						className={`${
-							href === pathname ? 'text-slate-500 cursor-default' : 'text-white'
-						} tracking-widest text-sm font-semibold group transition duration-500`}
-						href={href}>
-						{name}
-						{href !== pathname ? (
-							<span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-slate-500'></span>
-						) : null}
-					</Link>
-				))}
-			</div>
-			<MenuHamburguer menuItems={menudata} />
-		</nav>
+		<div className='fixed z-50 shadow-sm w-full'>
+			<nav className='grid grid-cols-2 w-full items-center p-4 relative backdrop-blur-md lg:grid-cols-3'>
+				<div className='flex items-center'>
+					<FlaskRound color='white' />
+					<h1 className='text-2xl font-bold text-white ml-2'>PHdaquimica</h1>
+				</div>
+				<div className='hidden items-end h-full w-full gap-4 justify-end sm:flex lg:justify-between'>
+					{menudata.map(({ href, name }) => (
+						<Link
+							key={name}
+							className={`${
+								href === pathname
+									? 'text-slate-500 cursor-default'
+									: 'text-white'
+							} tracking-widest text-sm font-semibold group transition duration-500`}
+							href={href}>
+							{name}
+							{href !== pathname ? (
+								<span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-slate-500'></span>
+							) : null}
+						</Link>
+					))}
+				</div>
+				<MenuHamburguer menuItems={menudata} />
+			</nav>
+		</div>
 	);
 };
 

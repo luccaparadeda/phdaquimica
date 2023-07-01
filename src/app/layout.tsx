@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='pt-BR'>
-			<body className={`${quicksand.className} bg-slate-950`}>
+			<body className={`${quicksand.className} bg-black/90`}>
 				<Navbar />
 				<Providers>{children}</Providers>
 			</body>

@@ -48,7 +48,7 @@ export default function Home() {
 						priority
 						loading='eager'
 					/>
-					<p className='text-3xl w-10/12 font-sans font-medium animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500  bg-clip-text text-transparent text-center sm:text-3xl md:text-4xl lg:text-5xl '>
+					<p className='text-3xl w-10/12 font-sans font-medium animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500  bg-clip-text text-transparent text-center sm:text-3xl md:text-4xl lg:text-5xl  lg:px-64'>
 						Olá eu sou o PH e serei seu professor durante essa trajetória
 					</p>
 				</div>
@@ -56,49 +56,6 @@ export default function Home() {
 					<h2 className='text-white font-semibold text-3xl w-full text-center'>
 						Cursos
 					</h2>
-					<div className='flex gap-10 w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
-						<p className='text-3xl text-center px-4 py-2 text-white'>
-							Intensivo
-						</p>
-						<ul className='flex flex-col gap-4'>
-							<li className='flex items-center gap-4'>
-								<Check
-									color='white'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Conteúdo completo</p>
-							</li>
-							<li className='flex items-center gap-4'>
-								<Check
-									color='white'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Rapido aprendizado</p>
-							</li>
-							<li className='flex items-center gap-4'>
-								<Check
-									color='white'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Exercicios Pontuais</p>
-							</li>
-							<li className='flex items-center gap-4'>
-								<Check
-									color='white'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Plantão de dúvidas</p>
-							</li>
-							<li>
-								<p className='text-white text-4xl w-full text-center'>...</p>
-							</li>
-						</ul>
-						<Button
-							variant={'ghost'}
-							className='text-md text-blue-200'>
-							Quero esse <ArrowRightCircle className='ml-2 text-blue-200' />
-						</Button>
-					</div>
 					<div className='flex gap-10 w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
 						<p className='text-3xl text-center px-4 py-2 text-white'>
 							Extensivo
@@ -138,8 +95,51 @@ export default function Home() {
 						</ul>
 						<Button
 							variant={'ghost'}
-							className='text-md text-blue-200'>
-							Quero esse <ArrowRightCircle className='ml-2 text-blue-200' />
+							className='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
+							Quero esse <ArrowRightCircle className='ml-2 text-blue-400 ' />
+						</Button>
+					</div>
+					<div className='flex gap-10 w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
+						<p className='text-3xl text-center px-4 py-2 text-white'>
+							Intensivo
+						</p>
+						<ul className='flex flex-col gap-4'>
+							<li className='flex items-center gap-4'>
+								<Check
+									color='white'
+									size={30}
+								/>
+								<p className='text-white text-lg'>Conteúdo completo</p>
+							</li>
+							<li className='flex items-center gap-4'>
+								<Check
+									color='white'
+									size={30}
+								/>
+								<p className='text-white text-lg'>Rapido aprendizado</p>
+							</li>
+							<li className='flex items-center gap-4'>
+								<Check
+									color='white'
+									size={30}
+								/>
+								<p className='text-white text-lg'>Exercicios Pontuais</p>
+							</li>
+							<li className='flex items-center gap-4'>
+								<Check
+									color='white'
+									size={30}
+								/>
+								<p className='text-white text-lg'>Plantão de dúvidas</p>
+							</li>
+							<li>
+								<p className='text-white text-4xl w-full text-center'>...</p>
+							</li>
+						</ul>
+						<Button
+							variant={'ghost'}
+							className='text-md text-red-400 hover:bg-red-900 hover:text-red-200'>
+							Quero esse <ArrowRightCircle className='ml-2 text-red-200' />
 						</Button>
 					</div>
 				</section>
