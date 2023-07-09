@@ -20,7 +20,7 @@ const page: FC<pageProps> = ({}) => {
 	const year = new Date().getFullYear();
 
 	return (
-		<div className='flex flex-col gap-32'>
+		<div className='flex flex-col gap-32 w-full text-white'>
 			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-32'>
 				<h1 className='animate-text bg-gradient-to-r from-teal-300 via-blue-300 to-red-300 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
 					Extensivo Química {year}
@@ -74,65 +74,6 @@ const page: FC<pageProps> = ({}) => {
 					<span className='font-semibold'>Término:</span>
 					<br /> vestibular da UFRGS
 				</p>
-			</section>
-			<section className='flex flex-col items-center gap-6 md:gap-12'>
-				<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
-					Porque você deve investir no curso{' '}
-					<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
-						Extensivo Química {year}
-					</span>
-				</p>
-				<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
-					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
-						<p className='text-xl md:text-2xl lg:text-3xl'>
-							Metodologia Eficiente
-						</p>
-					</li>
-					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
-						<p className='text-xl md:text-2xl lg:text-3xl'>
-							Aplicação dos conceitos
-						</p>
-					</li>
-					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
-						<p className='text-xl md:text-2xl lg:text-3xl'>Aulas Interativas</p>
-					</li>
-					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
-						<p className='text-xl md:text-2xl lg:text-3xl'>
-							Exercícios Práticos
-						</p>
-					</li>
-					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
-						<p className='text-xl md:text-2xl lg:text-3xl'>
-							Materiais exclusivos atualizados
-						</p>
-					</li>
-					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
-						<p className='text-xl md:text-2xl lg:text-3xl'>
-							Grupo de atendimento exclusivo
-						</p>
-					</li>
-				</ul>
-			</section>
-			<section className='flex flex-col items-center gap-16 md:gap-24'>
-				<p className='text-2xl font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
-					Seu Investimento Seguro
-				</p>
-
-				<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 md:w-80 md:h-64 md:justify-center md:gap-16'>
-					<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
-						Garantia de 7 dias.
-					</p>
-					<p className='text-center text-md text-white font-semibold w-9/12 md:text-lg lg:text-xl'>
-						Nos ultimos {year - 2021} anos todos os alunos matriculados ficaram
-						até o dia do pré prova!
-					</p>
-				</div>
 			</section>
 			<section className='flex flex-col items-center gap-10 md:my-16 md:gap-32'>
 				<p className='text-center text-xl px-10 font-bold md:text-3xl lg:text-4xl'>

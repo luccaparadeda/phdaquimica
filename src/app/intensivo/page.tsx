@@ -20,15 +20,15 @@ const page: FC<pageProps> = ({}) => {
 	const year = new Date().getFullYear();
 
 	return (
-		<div className='flex flex-col gap-32'>
+		<div className='flex flex-col gap-32 w-full text-white'>
 			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-32'>
-				<h1 className='animate-text bg-gradient-to-r from-teal-300 via-blue-300 to-red-300 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
-					Extensivo Química {year}
+				<h1 className='animate-text bg-gradient-to-r from-orange-500 via-blue-500 to-red-500 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
+					Intensivo Química {year}
 				</h1>
 				<p className='text-gray-400 drop-shadow-xl text-center font-semibold text-xl md:text-2xl'>
-					O curso mais completo da atualidade
+					O curso que vai te preparar para o vestibular
 				</p>
-				<Button className='animate-text bg-gradient-to-r from-blue-700 via-emerald-700 to-orange-700 md:text-lg'>
+				<Button className='animate-text shadow-lg shadow-blue-700 bg-blue-500 hover:bg-blue-900 md:text-lg'>
 					Quero fazer parte da turma
 				</Button>
 			</section>
@@ -57,22 +57,15 @@ const page: FC<pageProps> = ({}) => {
 					/>
 					<p className='flex-1 text-center md:text-lg'>Química Orgânica</p>
 				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
-					<TreePine
-						color='white'
-						className='flex-1 md:h-10 md:w-10'
-					/>
-					<p className='flex-1 text-center lg:text-lg'>Química Ambiental</p>
-				</div>
 			</section>
 			<section className='flex flex-col items-center gap-4 md:flex-row md:gap-16 md:justify-center md:my-24'>
 				<p className='text-2xl text-center'>
-					<span className='font-semibold'>Início:</span> <br /> 13/03/{year}
+					<span className='font-semibold'>Início:</span> <br /> 01/08/{year}
 				</p>
 				<ArrowRight className='text-white w-16 h-16 hidden md:block' />
 				<p className='text-2xl text-center'>
 					<span className='font-semibold'>Término:</span>
-					<br /> vestibular da UFRGS
+					<br /> 21/11/{year}
 				</p>
 			</section>
 			<section className='flex flex-col items-center gap-6 md:gap-12'>
@@ -119,21 +112,6 @@ const page: FC<pageProps> = ({}) => {
 					</li>
 				</ul>
 			</section>
-			<section className='flex flex-col items-center gap-16 md:gap-24'>
-				<p className='text-2xl font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
-					Seu Investimento Seguro
-				</p>
-
-				<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 md:w-80 md:h-64 md:justify-center md:gap-16'>
-					<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
-						Garantia de 7 dias.
-					</p>
-					<p className='text-center text-md text-white font-semibold w-9/12 md:text-lg lg:text-xl'>
-						Nos ultimos {year - 2021} anos todos os alunos matriculados ficaram
-						até o dia do pré prova!
-					</p>
-				</div>
-			</section>
 			<section className='flex flex-col items-center gap-10 md:my-16 md:gap-32'>
 				<p className='text-center text-xl px-10 font-bold md:text-3xl lg:text-4xl'>
 					O que você recebe ao se inscrever no curso?
@@ -159,35 +137,17 @@ const page: FC<pageProps> = ({}) => {
 				</p>
 				<div className='flex flex-wrap px-5 gap-16 justify-center md:px-0 md:gap-32'>
 					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
-						<p className=' text-center text-xl'>À vista</p>
-						<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
-							R$1199,20
-						</p>
+						<p className=' text-center text-xl'>Pix, Boleto ou Crédito</p>
+						<div className='flex flex-col gap-2 items-center'>
+							<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
+								497,00 <span>R$</span>
+							</p>
+							<p className='text-gray-400'>em até 12x</p>
+						</div>
 						<Button
 							variant={'ghost'}
 							size={'lg'}
 							className='shadow-xl rounded-full font-bold shadow-green-400/50'>
-							Comprar{' '}
-							<ArrowRightCircle
-								size={20}
-								className='ml-2'
-							/>
-						</Button>
-					</div>
-					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
-						<p className=' text-center text-xl'>Parcelado</p>
-						<div className='flex flex-col gap-1 items-center'>
-							<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
-								10x R$149,90
-							</p>
-							<span className='text-center text-gray-200'>
-								Total: R$1499,00
-							</span>
-						</div>
-						<Button
-							variant={'ghost'}
-							className='shadow-xl rounded-full font-bold shadow-green-400/50'
-							size={'lg'}>
 							Comprar{' '}
 							<ArrowRightCircle
 								size={20}

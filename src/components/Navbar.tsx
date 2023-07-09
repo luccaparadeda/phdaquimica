@@ -31,7 +31,7 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
 	const pathname = usePathname();
 	return (
-		<div className='fixed z-50 shadow-sm w-full'>
+		<div className='fixed z-50 shadow-sm w-full max-w-[1400px]'>
 			<nav className='grid grid-cols-2 w-full items-center p-4 relative backdrop-blur-md lg:grid-cols-3'>
 				<div className='flex items-center'>
 					<FlaskRound color='white' />
@@ -54,7 +54,10 @@ const Navbar: FC<NavbarProps> = ({}) => {
 						</Link>
 					))}
 				</div>
-				<MenuHamburguer menuItems={menudata} />
+				<MenuHamburguer
+					menuItems={menudata}
+					pathname={pathname}
+				/>
 			</nav>
 		</div>
 	);

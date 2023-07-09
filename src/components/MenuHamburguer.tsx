@@ -2,45 +2,55 @@
 import { FC, useState } from 'react';
 import { MenuItem } from '@/components/Navbar';
 import Link from 'next/link';
+import {
+	Sheet,
+	SheetContent,
+	SheetDescription,
+	SheetHeader,
+	SheetTitle,
+	SheetTrigger
+} from '@/components/ui/sheet';
 
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 
 interface MenuHamburguerProps {
 	menuItems: MenuItem[];
+	pathname: string;
 }
 
-const MenuHamburguer: FC<MenuHamburguerProps> = ({ menuItems }) => {
-	const [isOpen, setIsOpen] = useState(false);
+const MenuHamburguer: FC<MenuHamburguerProps> = ({ menuItems, pathname }) => {
 	return (
-		<div className='relative justify-self-end sm:hidden'>
-			{isOpen ? (
-				<X
-					color='white'
-					onClick={() => setIsOpen(false)}
-				/>
-			) : (
-				<Menu
-					color='white'
-					onClick={() => setIsOpen(true)}
-				/>
-			)}
-			<div
-				className={`${
-					!isOpen && 'hidden'
-				} absolute -right-2 z-10 bg-slate-950  shadow-inner shadow-blue-950   rounded-xl p-4 flex flex-col gap-y-6 top-11`}>
-				{menuItems.map(({ name, href }) => (
-					<div
-						key={name}
-						className='flex justify-end w-28 items-center'>
+		<Sheet>
+			<SheetTrigger
+				asChild
+				className='block sm:hidden justify-self-end'>
+				<Menu color='white' />
+			</SheetTrigger>
+			<SheetContent
+				side={'right'}
+				className='bg-black/80 flex flex-col gap-20'>
+				<SheetHeader>
+					<SheetTitle className='text-white font-black'>Menu</SheetTitle>
+					<SheetDescription className='flex flex-col gap-10 text-gray-200'>
+						selecione o melhor curso para o seu aprendizado
+					</SheetDescription>
+				</SheetHeader>
+				<div className='flex flex-col gap-10 w-full items-center'>
+					{menuItems.map(({ href, name }) => (
 						<Link
-							className='text-white tracking-widest text-sm font-semibold'
+							key={name}
+							className={`${
+								href === pathname
+									? 'text-slate-500 cursor-default'
+									: 'text-white'
+							} tracking-widest text-sm font-semibold group transition duration-500`}
 							href={href}>
 							{name}
 						</Link>
-					</div>
-				))}
-			</div>
-		</div>
+					))}
+				</div>
+			</SheetContent>
+		</Sheet>
 	);
 };
 
