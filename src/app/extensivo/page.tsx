@@ -1,5 +1,8 @@
+'use client';
+import CourseContent from '@/components/CourseContent';
 import Footer from '@/components/Footer';
 import Button from '@/components/ui/Button';
+import { cardKeyType } from '@/hooks/cardContent';
 import {
 	ArrowBigRight,
 	ArrowRight,
@@ -9,6 +12,7 @@ import {
 	Check,
 	ChevronRight,
 	Coffee,
+	LucideIcon,
 	MoveRight,
 	TreePine
 } from 'lucide-react';
@@ -16,8 +20,32 @@ import { FC } from 'react';
 
 interface pageProps {}
 
+interface CourseContentInterface {
+	text: cardKeyType;
+	Icon: LucideIcon;
+}
+
 const page: FC<pageProps> = ({}) => {
 	const year = new Date().getFullYear();
+
+	const courseContent: CourseContentInterface[] = [
+		{
+			text: 'Química Geral',
+			Icon: TreePine
+		},
+		{
+			text: 'Físico-Química',
+			Icon: TreePine
+		},
+		{
+			text: 'Química Orgânica',
+			Icon: TreePine
+		},
+		{
+			text: 'Química Ambiental',
+			Icon: TreePine
+		}
+	];
 
 	return (
 		<div className='flex flex-col gap-32 w-full text-white'>
@@ -32,39 +60,7 @@ const page: FC<pageProps> = ({}) => {
 					Quero fazer parte da turma
 				</Button>
 			</section>
-			<section className='flex flex-wrap items-center w-full justify-evenly gap-16'>
-				<h2 className='w-full text-center text-2xl font-semibold md:text-3xl lg:text-4xl'>
-					Conteúdos abordados
-				</h2>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
-					<TreePine
-						color='white'
-						className='flex-1 md:h-10 md:w-10'
-					/>
-					<p className='flex-1 text-center md:text-lg'>Química Geral</p>
-				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
-					<TreePine
-						color='white'
-						className='flex-1 md:h-10 md:w-10'
-					/>
-					<p className='flex-1 text-center md:text-lg'>Físico-Química</p>
-				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
-					<TreePine
-						color='white'
-						className='flex-1 md:h-10 md:w-10'
-					/>
-					<p className='flex-1 text-center md:text-lg'>Química Orgânica</p>
-				</div>
-				<div className='h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48'>
-					<TreePine
-						color='white'
-						className='flex-1 md:h-10 md:w-10'
-					/>
-					<p className='flex-1 text-center lg:text-lg'>Química Ambiental</p>
-				</div>
-			</section>
+			<CourseContent content={courseContent} />
 			<section className='flex flex-col items-center gap-4 md:flex-row md:gap-16 md:justify-center md:my-24'>
 				<p className='text-2xl text-center'>
 					<span className='font-semibold'>Início:</span> <br /> 13/03/{year}

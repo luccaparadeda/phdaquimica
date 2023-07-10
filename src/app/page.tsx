@@ -99,7 +99,7 @@ export default function Home() {
 						</li>
 					</ul>
 				</section>
-				<section className='text-white mt-40 mb-20 flex flex-col items-center gap-16 md:gap-24'>
+				<section className='text-white my-20 flex flex-col items-center gap-16 md:gap-24'>
 					<p className='text-2xl font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
 						Seu Investimento Seguro
 					</p>
@@ -125,28 +125,28 @@ export default function Home() {
 						<ul className='flex flex-col gap-4'>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Conteúdo completo</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Conhecimento aprofundado</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Exercicios Gerais</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Plantão de dúvidas</p>
@@ -168,28 +168,28 @@ export default function Home() {
 						<ul className='flex flex-col gap-4'>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Conteúdo completo</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Rapido aprendizado</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Exercicios Pontuais</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<Check
-									color='white'
+									className='text-white min-w-fit md:w-10 md:h-10'
 									size={30}
 								/>
 								<p className='text-white text-lg'>Plantão de dúvidas</p>

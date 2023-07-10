@@ -25,7 +25,7 @@ const Footer: FC<FooterProps> = ({}) => {
 					<Instagram className='text-white' />
 				</Link>
 				<Mail
-					className='text-white'
+					className='text-white hover:cursor-pointer'
 					onClick={copyEmail}
 				/>
 			</div>

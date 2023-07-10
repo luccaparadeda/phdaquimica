@@ -31,13 +31,13 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = ({}) => {
 	const pathname = usePathname();
 	return (
-		<div className='fixed z-50 shadow-sm w-full max-w-[1400px]'>
-			<nav className='grid grid-cols-2 w-full items-center p-4 relative backdrop-blur-md lg:grid-cols-3'>
+		<div className='fixed z-50 shadow-sm w-full mx-auto'>
+			<nav className='grid grid-cols-2 w-full p-4 items-center relative backdrop-blur-md lg:grid-cols-3'>
 				<div className='flex items-center'>
 					<FlaskRound color='white' />
 					<h1 className='text-2xl font-bold text-white ml-2'>PHdaquimica</h1>
 				</div>
-				<div className='hidden items-end h-full w-full gap-4 justify-end sm:flex lg:justify-between'>
+				<div className='hidden items-end gap-6 justify-end sm:flex lg:justify-between'>
 					{menudata.map(({ href, name }) => (
 						<Link
 							key={name}

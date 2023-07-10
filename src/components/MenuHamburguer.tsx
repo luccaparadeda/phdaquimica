@@ -4,6 +4,7 @@ import { MenuItem } from '@/components/Navbar';
 import Link from 'next/link';
 import {
 	Sheet,
+	SheetClose,
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
@@ -23,7 +24,7 @@ const MenuHamburguer: FC<MenuHamburguerProps> = ({ menuItems, pathname }) => {
 		<Sheet>
 			<SheetTrigger
 				asChild
-				className='block sm:hidden justify-self-end'>
+				className='block sm:hidden justify-self-end hover:cursor-pointer'>
 				<Menu color='white' />
 			</SheetTrigger>
 			<SheetContent
@@ -45,7 +46,7 @@ const MenuHamburguer: FC<MenuHamburguerProps> = ({ menuItems, pathname }) => {
 									: 'text-white'
 							} tracking-widest text-sm font-semibold group transition duration-500`}
 							href={href}>
-							{name}
+							<SheetClose className='focus:not-sr-only'>{name}</SheetClose>
 						</Link>
 					))}
 				</div>
