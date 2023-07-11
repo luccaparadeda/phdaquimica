@@ -21,7 +21,7 @@ const ContentCard: FC<ContentCardProps> = ({
 			className={`${
 				isClicked
 					? 'shadow-inner shadow-white border-2'
-					: 'hover:cursor-pointer'
+					: 'hover:cursor-pointer hover:scale-110 ease-in-out duration-200 transition-all'
 			} h-36 w-36 flex flex-col justify-center items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl px-2 md:h-48 md:w-48`}>
 			<Icon
 				color='white'

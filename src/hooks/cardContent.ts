@@ -3,10 +3,10 @@ import { useState } from "react"
 export type cardKeyType = "Química Geral" | "Físico-Química" | "Química Orgânica" | "Química Ambiental"
 
 const cardInfo = {
-    "Química Geral": "",
-    "Físico-Química" : "",
-    "Química Orgânica" : "",
-    "Química Ambiental" : ""
+    "Química Geral": "TESTANDO SEM ACENTO TABELA QUIMICAAAAAAA   AA",
+    "Físico-Química" : "lorem ipsum dolor sit amet c",
+    "Química Orgânica" : " lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem   ",
+    "Química Ambiental" : "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem"
 }
 
 interface cardContentInterface {

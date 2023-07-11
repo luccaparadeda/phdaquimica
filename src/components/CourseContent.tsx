@@ -13,7 +13,7 @@ interface CourseContentProps {
 }
 
 const CourseContent: FC<CourseContentProps> = ({ content }) => {
-	const { cardContent, handleCardInfo, cardInfoKeys } = useCardContent();
+	const { cardContent, handleCardInfo } = useCardContent();
 	return (
 		<>
 			<section className='flex flex-wrap items-center w-full justify-evenly gap-16'>

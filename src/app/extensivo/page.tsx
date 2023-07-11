@@ -16,6 +16,7 @@ import {
 	MoveRight,
 	TreePine
 } from 'lucide-react';
+import Link from 'next/link';
 import { FC } from 'react';
 
 interface pageProps {}
@@ -100,16 +101,22 @@ const page: FC<pageProps> = ({}) => {
 						<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
 							R$1199,20
 						</p>
-						<Button
-							variant={'ghost'}
-							size={'lg'}
-							className='shadow-xl rounded-full font-bold shadow-green-400/50'>
-							Comprar{' '}
-							<ArrowRightCircle
-								size={20}
-								className='ml-2'
-							/>
-						</Button>
+						<Link
+							href={
+								'https://wa.me/5551993467771?text=Ol%C3%A1+vim+a+procura+do+curso+Extensivo.'
+							}
+							target='_blank'>
+							<Button
+								variant={'ghost'}
+								size={'lg'}
+								className='shadow-xl rounded-full font-bold shadow-green-400/50'>
+								Comprar{' '}
+								<ArrowRightCircle
+									size={20}
+									className='ml-2'
+								/>
+							</Button>
+						</Link>
 					</div>
 					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
 						<p className=' text-center text-xl'>Parcelado</p>
@@ -121,16 +128,22 @@ const page: FC<pageProps> = ({}) => {
 								Total: R$1499,00
 							</span>
 						</div>
-						<Button
-							variant={'ghost'}
-							className='shadow-xl rounded-full font-bold shadow-green-400/50'
-							size={'lg'}>
-							Comprar{' '}
-							<ArrowRightCircle
-								size={20}
-								className='ml-2'
-							/>
-						</Button>
+						<Link
+							href={
+								'https://wa.me/5551993467771?text=Ol%C3%A1+vim+a+procura+do+curso+Extensivo.'
+							}
+							target='_blank'>
+							<Button
+								variant={'ghost'}
+								className='shadow-xl rounded-full font-bold shadow-green-400/50'
+								size={'lg'}>
+								Comprar{' '}
+								<ArrowRightCircle
+									size={20}
+									className='ml-2'
+								/>
+							</Button>
+						</Link>
 					</div>
 				</div>
 			</section>
