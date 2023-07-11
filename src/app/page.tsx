@@ -114,7 +114,7 @@ export default function Home() {
 						</p>
 					</div>
 				</section>
-				<section className='flex min-h-screen flex-wrap gap-8 w-full justify-center mt-10	p-10'>
+				<section className='flex min-h-screen flex-wrap gap-8 w-full justify-center mt-10'>
 					<h2 className='text-white font-semibold text-3xl w-full text-center'>
 						Cursos
 					</h2>
