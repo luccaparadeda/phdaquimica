@@ -100,7 +100,7 @@ export default function Home() {
 					</ul>
 				</section>
 				<section className='text-white my-20 flex flex-col items-center gap-16 md:gap-24'>
-					<p className='text-2xl font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
+					<p className='text-2xl text-center font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
 						Seu Investimento Seguro
 					</p>
 
