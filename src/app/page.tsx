@@ -62,37 +62,37 @@ export default function Home() {
 					</p>
 					<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
-							<Check className='text-white md:w-10 md:h-10' />
+							<Check className='text-white w-8 md:w-10 md:h-10' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
 								Metodologia Eficiente
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
-							<Check className='text-white md:w-10 md:h-10' />
+							<Check className='text-white w-8 md:w-10 md:h-10' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
 								Aplicação dos conceitos
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
-							<Check className='text-white md:w-10 md:h-10' />
+							<Check className='text-white md:w-10 md:h-10 w-8' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
 								Aulas Interativas
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
-							<Check className='text-white md:w-10 md:h-10' />
+							<Check className='text-white md:w-10 md:h-10 w-8' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
 								Exercícios Práticos
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
-							<Check className='text-white md:w-10 md:h-10' />
+							<Check className='text-white md:w-10 md:h-10 w-8' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
 								Materiais exclusivos atualizados
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
-							<Check className='text-white md:w-10 md:h-10' />
+							<Check className='text-white md:w-10 md:h-10 w-8' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
 								Grupo de atendimento exclusivo
 							</p>
@@ -122,34 +122,26 @@ export default function Home() {
 						<p className='text-3xl text-center px-4 py-2 text-white'>
 							Intensivo
 						</p>
-						<ul className='flex flex-col gap-4'>
+						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Conteúdo completo</p>
+								<p className='text-white text-lg text-center'>
+									Conteúdo completo
+								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Rapido aprendizado</p>
+								<p className='text-white text-lg text-center'>
+									Rapido aprendizado
+								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Exercicios Pontuais</p>
+								<p className='text-white text-lg text-center'>
+									Exercicios Pontuais
+								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Plantão de dúvidas</p>
+								<p className='text-white text-lg text-center'>
+									Plantão de dúvidas
+								</p>
 							</li>
 							<li>
 								<p className='text-white text-4xl w-full text-center'>...</p>
@@ -167,43 +159,35 @@ export default function Home() {
 						<p className='text-3xl text-center px-4 py-2 text-white'>
 							Extensivo
 						</p>
-						<ul className='flex flex-col gap-4'>
+						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Conteúdo completo</p>
+								<p className='text-white text-lg text-center'>
+									Conteúdo completo
+								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Conhecimento aprofundado</p>
+								<p className='text-white text-lg text-center'>
+									Conhecimento aprofundado
+								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Exercicios Gerais</p>
+								<p className='text-white text-lg text-center'>
+									Exercicios Gerais
+								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<Check
-									className='text-white md:w-10 md:h-10'
-									size={30}
-								/>
-								<p className='text-white text-lg'>Plantão de dúvidas</p>
+								<p className='text-white text-lg text-center'>
+									Plantão de dúvidas
+								</p>
 							</li>
-							<li>
+							<li className='flex items-center gap-4'>
 								<p className='text-white text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
 						<Link href={'/extensivo'}>
 							<Button
 								variant={'ghost'}
-								className='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
+								text-centerclassName='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
 								Quero esse <ArrowRightCircle className='ml-2 text-blue-400 ' />
 							</Button>
 						</Link>
