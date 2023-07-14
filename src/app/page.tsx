@@ -27,7 +27,7 @@ export default function Home() {
 		<div className=' flex flex-col items-center'>
 			<div className=' h-full flex flex-col'>
 				<div className='flex flex-col items-center mb-16 mt-32 justify-center w-full gap-20'>
-					<h1 className='text-4xl font-sans w-10/12 font-bold px-10 text-white text-center sm:text-5xl md:text-6xl lg:text-7xl lg:w-8/12'>
+					<h1 className='text-4xl font-sans w-10/12 font-bold text-white text-center sm:text-5xl md:px-10 md:text-6xl lg:text-7xl lg:w-8/12'>
 						Está pronto para conhecer os melhores cursos de{' '}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
 							Química?
