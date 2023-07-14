@@ -187,7 +187,7 @@ export default function Home() {
 						<Link href={'/extensivo'}>
 							<Button
 								variant={'ghost'}
-								text-centerclassName='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
+								className='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
 								Quero esse <ArrowRightCircle className='ml-2 text-blue-400 ' />
 							</Button>
 						</Link>
