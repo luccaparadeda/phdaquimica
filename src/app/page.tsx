@@ -29,7 +29,7 @@ export default function Home() {
 				<div className='flex flex-col items-center mb-16 mt-32 justify-center w-full gap-20'>
 					<h1 className='text-4xl font-sans w-10/12 font-bold px-10 text-white text-center sm:text-5xl md:text-6xl lg:text-7xl lg:w-8/12'>
 						Está pronto para conhecer os melhores cursos de{' '}
-						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
+						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
 							Quimica?
 						</span>
 					</h1>
@@ -49,14 +49,14 @@ export default function Home() {
 						priority
 						loading='eager'
 					/>
-					<p className='text-3xl w-10/12 font-sans font-medium animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500  bg-clip-text text-transparent text-center sm:text-3xl md:text-4xl lg:text-5xl  lg:px-64'>
+					<p className='text-3xl w-10/12 font-sans font-medium text-gray-100 text-center sm:text-3xl md:text-4xl lg:text-5xl  lg:px-64'>
 						Olá eu sou o PH e serei seu professor durante essa trajetória
 					</p>
 				</div>
 				<section className='text-white my-32 flex flex-col items-center gap-6 md:gap-12'>
 					<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
 						Porque você deve investir no curso{' '}
-						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
+						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
 							Extensivo Química {year}
 						</span>
 					</p>
@@ -105,7 +105,7 @@ export default function Home() {
 					</p>
 
 					<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 md:w-80 md:h-64 md:justify-center md:gap-16'>
-						<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
+						<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
 							Garantia de 7 dias.
 						</p>
 						<p className='text-center text-md text-white font-semibold w-9/12 md:text-lg lg:text-xl'>
@@ -155,11 +155,13 @@ export default function Home() {
 								<p className='text-white text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Button
-							variant={'ghost'}
-							className='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
-							Quero esse <ArrowRightCircle className='ml-2 text-blue-400 ' />
-						</Button>
+						<Link href={'/extensivo'}>
+							<Button
+								variant={'ghost'}
+								className='text-md  text-blue-400 hover:bg-blue-900 hover:text-blue-200'>
+								Quero esse <ArrowRightCircle className='ml-2 text-blue-400 ' />
+							</Button>
+						</Link>
 					</div>
 					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
 						<p className='text-3xl text-center px-4 py-2 text-white'>
@@ -198,11 +200,13 @@ export default function Home() {
 								<p className='text-white text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Button
-							variant={'ghost'}
-							className='text-md text-green-400 hover:bg-green-900 hover:text-green-200'>
-							Quero esse <ArrowRightCircle className='ml-2 text-green-200' />
-						</Button>
+						<Link href={'/intensivo'}>
+							<Button
+								variant={'ghost'}
+								className='text-md text-green-400 hover:bg-green-900 hover:text-green-200'>
+								Quero esse <ArrowRightCircle className='ml-2 text-green-200' />
+							</Button>
+						</Link>
 					</div>
 				</section>
 				<Footer />

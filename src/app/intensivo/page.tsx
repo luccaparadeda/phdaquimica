@@ -16,6 +16,7 @@ import {
 	MoveRight,
 	TreePine
 } from 'lucide-react';
+import Link from 'next/link';
 import { FC } from 'react';
 
 interface pageProps {}
@@ -46,7 +47,7 @@ const page: FC<pageProps> = ({}) => {
 	return (
 		<div className='flex flex-col gap-32 w-full text-white'>
 			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-32'>
-				<h1 className='animate-text bg-gradient-to-r from-orange-500 via-blue-500 to-red-500 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
+				<h1 className='animate-text bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
 					Intensivo Química {year}
 				</h1>
 				<p className='text-gray-400 drop-shadow-xl text-center font-semibold text-xl md:text-2xl'>
@@ -138,21 +139,27 @@ const page: FC<pageProps> = ({}) => {
 					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
 						<p className=' text-center text-xl'>Pix, Boleto ou Crédito</p>
 						<div className='flex flex-col gap-2 items-center'>
-							<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
+							<pre className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
+								12x 35,00 R$
+							</pre>
+							<p className='text-gray-400'>
 								497,00 <span>R$</span>
 							</p>
-							<p className='text-gray-400'>em até 12x</p>
 						</div>
-						<Button
-							variant={'ghost'}
-							size={'lg'}
-							className='shadow-xl rounded-full font-bold shadow-green-400/50'>
-							Comprar{' '}
-							<ArrowRightCircle
-								size={20}
-								className='ml-2'
-							/>
-						</Button>
+						<Link
+							href='http://mpago.la/2Nvpoqj'
+							target='_blank'>
+							<Button
+								variant={'ghost'}
+								size={'lg'}
+								className='shadow-xl rounded-full font-bold shadow-green-400/50'>
+								Comprar{' '}
+								<ArrowRightCircle
+									size={20}
+									className='ml-2'
+								/>
+							</Button>
+						</Link>
 					</div>
 				</div>
 			</section>

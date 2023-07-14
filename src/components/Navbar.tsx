@@ -35,7 +35,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
 			<nav className='grid grid-cols-2 w-full p-4 items-center relative backdrop-blur-md lg:grid-cols-3'>
 				<div className='flex items-center'>
 					<FlaskRound color='white' />
-					<h1 className='text-2xl font-bold text-white ml-2'>PHdaquimica</h1>
+					<h1 className='text-2xl font-bold text-white ml-2'>pHdaQuimica</h1>
 				</div>
 				<div className='hidden items-end gap-6 justify-end sm:flex lg:justify-between'>
 					{menudata.map(({ href, name }) => (

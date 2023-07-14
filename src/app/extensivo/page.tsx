@@ -51,13 +51,13 @@ const page: FC<pageProps> = ({}) => {
 	return (
 		<div className='flex flex-col gap-32 w-full text-white'>
 			<section className=' mt-32 flex flex-col items-center gap-16 justify-center md:gap-32'>
-				<h1 className='animate-text bg-gradient-to-r from-teal-300 via-blue-300 to-red-300 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
+				<h1 className='animate-text bg-gradient-to-r from-cyan-500 via-blue-500 to-emerald-500 bg-clip-text text-transparent text-4xl font-sans w-10/12 font-black text-center sm:text-5xl md:text-6xl lg:text-7xl'>
 					Extensivo Química {year}
 				</h1>
 				<p className='text-gray-400 drop-shadow-xl text-center font-semibold text-xl md:text-2xl'>
 					O curso mais completo da atualidade
 				</p>
-				<Button className='animate-text bg-gradient-to-r from-blue-700 via-emerald-700 to-orange-700 md:text-lg'>
+				<Button className='animate-text bg-gradient-to-r from-blue-700 via-purple-700 to-cyan-700 md:text-lg'>
 					Quero fazer parte da turma
 				</Button>
 			</section>

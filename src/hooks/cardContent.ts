@@ -3,9 +3,9 @@ import { useState } from "react"
 export type cardKeyType = "Química Geral" | "Físico-Química" | "Química Orgânica" | "Química Ambiental"
 
 const cardInfo = {
-    "Química Geral": "TESTANDO SEM ACENTO TABELA QUIMICAAAAAAA   AA",
-    "Físico-Química" : "lorem ipsum dolor sit amet c",
-    "Química Orgânica" : " lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem   ",
+    "Química Geral": "Sistemas Materiais e Análise Imediata • Estrutura Atômica • Ligações Químicas • Cálculo Estequiométrico ",
+    "Físico-Química" : "Soluções Químicas • Termoquímica • Cinética e Equilíbrio • Eletroquímica",
+    "Química Orgânica" : "Cadeias Carbônicas • Funções Orgânicas • Isomeria Plana e Espacial • Reações Orgânicas",
     "Química Ambiental" : "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. lorem"
 }
 
