@@ -51,7 +51,7 @@ const page: FC<pageProps> = ({}) => {
 					Intensivo Química {year}
 				</h1>
 				<p className='text-gray-400 drop-shadow-xl text-center font-semibold text-xl md:text-2xl'>
-					O curso que vai te preparar para o vestibular
+					O curso que vai te preparar para o vestibular!
 				</p>
 				<Button className='animate-text shadow-lg shadow-blue-700 bg-blue-500 hover:bg-blue-900 md:text-lg'>
 					Quero fazer parte da turma
@@ -70,9 +70,9 @@ const page: FC<pageProps> = ({}) => {
 			</section>
 			<section className='flex flex-col items-center gap-6 md:gap-12'>
 				<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
-					Porque você deve investir no curso{' '}
+					Porquê você deve investir no curso{' '}
 					<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
-						Extensivo Química {year}
+						Intensivo Química {year}
 					</span>
 				</p>
 				<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
@@ -140,7 +140,7 @@ const page: FC<pageProps> = ({}) => {
 						<p className=' text-center text-xl'>Pix, Boleto ou Crédito</p>
 						<div className='flex flex-col gap-2 items-center'>
 							<pre className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
-								12x 35,00 R$
+								12x 41,42 R$
 							</pre>
 							<p className='text-gray-400'>
 								497,00 <span>R$</span>

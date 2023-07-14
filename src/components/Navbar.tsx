@@ -49,7 +49,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
 							href={href}>
 							{name}
 							{href !== pathname ? (
-								<span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-slate-500'></span>
+								<span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-teal-600 via-blue-600 to-cyan-600'></span>
 							) : null}
 						</Link>
 					))}
