@@ -125,26 +125,26 @@ export default function Home() {
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Conteúdo completo
+									Tópicos mais abordados no ENEM
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Rapido aprendizado
+									1 e-book em PDF
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Exercicios Pontuais
+									Plantões em grupo
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Plantão de dúvidas
+									Caneca do curso
 								</p>
 							</li>
 							<li>
-								<p className='text-white text-4xl w-full text-center'>...</p>
+								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
 						<Link href={'/intensivo'}>
@@ -162,26 +162,26 @@ export default function Home() {
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Conteúdo completo
+									CONTEUDO PROGRAMATICO COMPLETO
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Conhecimento aprofundado
+									3 EBOOKS em PDF
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Exercicios Gerais
+									Plantões em grupo e individuais
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Plantão de dúvidas
+									Caneca do curso
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<p className='text-white text-4xl w-full text-center'>...</p>
+								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
 						<Link href={'/extensivo'}>

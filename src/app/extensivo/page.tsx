@@ -92,7 +92,7 @@ const page: FC<pageProps> = ({}) => {
 				</div>
 			</section>
 			<section className='flex flex-col items-center gap-24'>
-				<p className='text-2xl text-center animate-text bg-gradient-to-r from-teal-500 via-green-500 to-orange-500 bg-clip-text text-transparent font-black lg:text-4xl'>
+				<p className='text-2xl text-center animate-text bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 bg-clip-text text-transparent font-black lg:text-4xl'>
 					Investimento
 				</p>
 				<div className='flex flex-wrap px-5 gap-16 justify-center md:px-0 md:gap-32'>

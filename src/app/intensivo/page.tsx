@@ -71,7 +71,7 @@ const page: FC<pageProps> = ({}) => {
 			<section className='flex flex-col items-center gap-6 md:gap-12'>
 				<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
 					Porquê você deve investir no curso{' '}
-					<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black'>
+					<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
 						Intensivo Química {year}
 					</span>
 				</p>
@@ -120,7 +120,7 @@ const page: FC<pageProps> = ({}) => {
 					<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-black  bg-gray-800 rounded-3xl md:w-64 md:h-64 md:justify-evenly'>
 						<Book className='flex-1 w-10 h-10 md:w-20 md:h-20 md:flex-initial' />
 						<p className='flex-1 text-center animate-text bg-gradient-to-l from-teal-500 via-blue-500 to-red-500 bg-clip-text text-transparent font-semibold px-5 md:flex-initial md:text-xl'>
-							3 E-books em PDF
+							1 E-books em PDF
 						</p>
 					</div>
 					<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-black  bg-gray-800 rounded-3xl md:w-64 md:h-64 md:justify-evenly'>
@@ -132,7 +132,7 @@ const page: FC<pageProps> = ({}) => {
 				</div>
 			</section>
 			<section className='flex flex-col items-center gap-24'>
-				<p className='text-2xl text-center animate-text bg-gradient-to-r from-teal-500 via-green-500 to-orange-500 bg-clip-text text-transparent font-black lg:text-4xl'>
+				<p className='text-2xl text-center animate-text bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 bg-clip-text text-transparent font-black lg:text-4xl'>
 					Investimento
 				</p>
 				<div className='flex flex-wrap px-5 gap-16 justify-center md:px-0 md:gap-32'>
