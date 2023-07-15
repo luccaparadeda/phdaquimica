@@ -99,7 +99,7 @@ export default function Home() {
 						</li>
 					</ul>
 				</section>
-				<section className='text-white my-20 flex flex-col items-center gap-16 md:gap-24'>
+				<section className='text-white mb-20 flex flex-col items-center gap-16 md:gap-24'>
 					<p className='text-2xl text-center font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl'>
 						Seu Investimento Seguro
 					</p>
@@ -130,7 +130,7 @@ export default function Home() {
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									1 e-book em PDF
+									1 E-book em PDF
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
@@ -162,12 +162,12 @@ export default function Home() {
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									CONTEUDO PROGRAMATICO COMPLETO
+									Conteúdo programático completo
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									3 EBOOKS em PDF
+									3 E-books em PDF
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
