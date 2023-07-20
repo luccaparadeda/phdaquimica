@@ -54,7 +54,7 @@ const page: FC<pageProps> = ({}) => {
 					O curso que vai te preparar para o vestibular!
 				</p>
 				<Button className='animate-text shadow-lg shadow-blue-700 bg-blue-500 hover:bg-blue-900 md:text-lg'>
-					Quero fazer parte da turma
+					<a href={'#investimento'}>Quero fazer parte da turma</a>
 				</Button>
 			</section>
 			<CourseContent content={courseContent} />
@@ -131,7 +131,9 @@ const page: FC<pageProps> = ({}) => {
 					</div>
 				</div>
 			</section>
-			<section className='flex flex-col items-center gap-24'>
+			<section
+				className='flex flex-col items-center gap-24'
+				id='investimento'>
 				<p className='text-2xl text-center animate-text bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 bg-clip-text text-transparent font-black lg:text-4xl'>
 					Investimento
 				</p>
