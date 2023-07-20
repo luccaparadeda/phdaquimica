@@ -77,35 +77,35 @@ const page: FC<pageProps> = ({}) => {
 				</p>
 				<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<Check className='text-white w-8 md:w-10 md:h-10' />
 						<p className='text-xl md:text-2xl lg:text-3xl'>
 							Metodologia Eficiente
 						</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<Check className='text-white w-8 md:w-10 md:h-10' />
 						<p className='text-xl md:text-2xl lg:text-3xl'>
 							Aplicação dos conceitos
 						</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<Check className='text-white md:w-10 md:h-10 w-8' />
 						<p className='text-xl md:text-2xl lg:text-3xl'>Aulas Interativas</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<Check className='text-white md:w-10 md:h-10 w-8' />
 						<p className='text-xl md:text-2xl lg:text-3xl'>
 							Exercícios Práticos
 						</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<Check className='text-white md:w-10 md:h-10 w-8' />
 						<p className='text-xl md:text-2xl lg:text-3xl'>
 							Materiais exclusivos atualizados
 						</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
-						<Check className='text-white min-w-fit md:w-10 md:h-10' />
+						<Check className='text-white md:w-10 md:h-10 w-8' />
 						<p className='text-xl md:text-2xl lg:text-3xl'>
 							Grupo de atendimento exclusivo
 						</p>
