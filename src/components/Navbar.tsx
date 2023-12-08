@@ -17,12 +17,12 @@ const menudata: MenuItem[] = [
 		href: '/'
 	},
 	{
-		name: 'Intensivo',
-		href: '/intensivo'
+		name: 'Online',
+		href: '/online'
 	},
 	{
-		name: 'Extensivo',
-		href: '/extensivo'
+		name: 'Presencial',
+		href: '/presencial'
 	}
 ];
 

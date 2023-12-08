@@ -33,6 +33,10 @@ export default function Home() {
 							Química?
 						</span>
 					</h1>
+					<iframe
+						width='420'
+						height='315'
+						src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe>
 					<ChevronsDown
 						color='white'
 						className='animate-bounce'
@@ -119,9 +123,7 @@ export default function Home() {
 						Cursos
 					</h2>
 					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
-						<p className='text-3xl text-center px-4 py-2 text-white'>
-							Intensivo
-						</p>
+						<p className='text-3xl text-center px-4 py-2 text-white'>Online</p>
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
@@ -147,7 +149,7 @@ export default function Home() {
 								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Link href={'/intensivo'}>
+						<Link href={'/online'}>
 							<Button
 								variant={'ghost'}
 								className='text-md text-green-400 hover:bg-green-900 hover:text-green-200'>
@@ -157,7 +159,7 @@ export default function Home() {
 					</div>
 					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
 						<p className='text-3xl text-center px-4 py-2 text-white'>
-							Extensivo
+							Presencial
 						</p>
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
@@ -184,7 +186,7 @@ export default function Home() {
 								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Link href={'/extensivo'}>
+						<Link href={'/Presencial'}>
 							<Button
 								variant={'ghost'}
 								className='text-md  text-gray-400 hover:bg-gray-900 hover:text-gray-200'>
