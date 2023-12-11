@@ -212,6 +212,31 @@ const page: FC<pageProps> = ({}) => {
 				</p>
 				<div className='flex flex-wrap px-5 gap-16 justify-center md:px-0 md:gap-32'>
 					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
+						<p className=' text-center text-xl'>Pix, Boleto ou Crédito</p>
+						<div className='flex flex-col gap-2 items-center'>
+							<pre className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
+								10x R$185,90*
+							</pre>
+							<p className='text-gray-400'>À vista R$1799,00</p>
+						</div>
+						<Link
+							href='https://mpago.la/1bqRoAG'
+							target='_blank'>
+							<Button
+								variant={'ghost'}
+								size={'lg'}
+								className='shadow-xl rounded-full font-bold shadow-green-400/50'>
+								Comprar{' '}
+								<ArrowRightCircle
+									size={20}
+									className='ml-2'
+								/>
+							</Button>
+						</Link>
+					</div>
+				</div>
+				{/* <div className='flex flex-wrap px-5 gap-16 justify-center md:px-0 md:gap-32'>
+					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
 						<p className=' text-center text-xl'>À vista</p>
 						<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
 							R$1799,00
@@ -253,7 +278,7 @@ const page: FC<pageProps> = ({}) => {
 							</Button>
 						</Link>
 					</div>
-				</div>
+				</div> */}
 				<p className='text-gray-400 text-xs text-center font-semibold font-mono md:font-black md:text-md'>
 					+ taxa de matrícula 12x R$13,68 ou R$135,00 à vista
 				</p>
