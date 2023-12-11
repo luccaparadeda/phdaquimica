@@ -3,6 +3,7 @@ import './globals.css';
 import { Quicksand } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
 				<Navbar />
 				<div className='container'>
 					<Providers>{children}</Providers>
+					<Analytics />
 				</div>
 			</body>
 		</html>
