@@ -33,6 +33,9 @@ export default function Home() {
 							Química?
 						</span>
 					</h1>
+					<iframe
+						className='w-11/12 h-96 md:w-10/12 md:h-96 lg:w-8/12 lg:h-96'
+						src='https://www.youtube.com/embed/pvQVQKdlgTo'></iframe>
 					<ChevronsDown
 						color='white'
 						className='animate-bounce'
@@ -94,7 +97,7 @@ export default function Home() {
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
 							<Check className='text-white md:w-10 md:h-10 w-8' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
-								Grupo de atendimento exclusivo
+								Exemplos práticos
 							</p>
 						</li>
 					</ul>
@@ -106,7 +109,7 @@ export default function Home() {
 
 					<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 md:w-80 md:h-64 md:justify-center md:gap-16'>
 						<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
-							Garantia de 7 dias.
+							Garantia de 30 dias.
 						</p>
 						<p className='text-center text-md text-white font-semibold w-9/12 md:text-lg lg:text-xl'>
 							Nos últimos {year - 2021} anos todos os alunos matriculados
@@ -120,18 +123,51 @@ export default function Home() {
 					</h2>
 					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
 						<p className='text-3xl text-center px-4 py-2 text-white'>
-							Intensivo
+							Presencial
 						</p>
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Tópicos mais abordados no ENEM
+									Conteúdo programatico completo
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									1 E-book em PDF
+									3 livros físicos
 								</p>
+							</li>
+							<li className='flex items-center gap-4'>
+								<p className='text-white text-lg text-center'>
+									Plantões Individuais e em Grupo
+								</p>
+							</li>
+							<li className='flex items-center gap-4'>
+								<p className='text-white text-lg text-center'>
+									Simulados Autorais
+								</p>
+							</li>
+							<li>
+								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
+							</li>
+						</ul>
+						<Link href={'/presencial'}>
+							<Button
+								variant={'ghost'}
+								className='text-md text-green-400 border-2 border-green-200 rounded-2xl hover:bg-green-900 hover:text-green-200'>
+								Quero esse <ArrowRightCircle className='ml-2 text-green-200' />
+							</Button>
+						</Link>
+					</div>
+					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
+						<p className='text-3xl text-center px-4 py-2 text-white'>Online</p>
+						<ul className='flex flex-col gap-4 items-center'>
+							<li className='flex items-center gap-4'>
+								<p className='text-white text-lg text-center'>
+									100+ Listas Extras para aprofundar seu conhecimento
+								</p>
+							</li>
+							<li className='flex items-center gap-4'>
+								<p className='text-white text-lg text-center'>E-books em PDF</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
@@ -140,54 +176,17 @@ export default function Home() {
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Caneca do curso
-								</p>
-							</li>
-							<li>
-								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
-							</li>
-						</ul>
-						<Link href={'/intensivo'}>
-							<Button
-								variant={'ghost'}
-								className='text-md text-green-400 hover:bg-green-900 hover:text-green-200'>
-								Quero esse <ArrowRightCircle className='ml-2 text-green-200' />
-							</Button>
-						</Link>
-					</div>
-					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
-						<p className='text-3xl text-center px-4 py-2 text-white'>
-							Extensivo
-						</p>
-						<ul className='flex flex-col gap-4 items-center'>
-							<li className='flex items-center gap-4'>
-								<p className='text-white text-lg text-center'>
-									Conteúdo programático completo
-								</p>
-							</li>
-							<li className='flex items-center gap-4'>
-								<p className='text-white text-lg text-center'>
-									3 E-books em PDF
-								</p>
-							</li>
-							<li className='flex items-center gap-4'>
-								<p className='text-white text-lg text-center'>
-									Plantões em grupo e individuais
-								</p>
-							</li>
-							<li className='flex items-center gap-4'>
-								<p className='text-white text-lg text-center'>
-									Caneca do curso
+									Aulas via Google Meets
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Link href={'/extensivo'}>
+						<Link href={'/online'}>
 							<Button
 								variant={'ghost'}
-								className='text-md  text-gray-400 hover:bg-gray-900 hover:text-gray-200'>
+								className='text-md text-gray-400 border-gray-400 border-2 rounded-2xl hover:bg-gray-900 hover:text-gray-200'>
 								Quero esse <ArrowRightCircle className='ml-2 text-gray-400 ' />
 							</Button>
 						</Link>
