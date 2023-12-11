@@ -154,7 +154,7 @@ const page: FC<pageProps> = ({}) => {
 					<div className='h-36 w-36 flex flex-col justify-center items-center shadow-inner shadow-black  bg-gray-800 rounded-3xl md:w-64 md:h-64 md:justify-evenly'>
 						<Book className='flex-1 w-10 h-10 md:w-20 md:h-20 md:flex-initial' />
 						<p className='flex-1 text-center animate-text bg-gradient-to-l from-teal-500 via-blue-500 to-red-500 bg-clip-text text-transparent font-semibold px-5 md:flex-initial md:text-xl'>
-							3 E-book em PDF
+							3 Livros fisicos
 						</p>
 					</div>
 					<div className='flex flex-col gap-5'>
