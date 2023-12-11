@@ -110,7 +110,7 @@ export default function Home() {
 
 					<div className='px-2 flex flex-col justify-evenly items-center gap-2 w-64 h-52 shadow-2xl border-t-2 border-white rounded-xl shadow-blue-950 md:w-80 md:h-64 md:justify-center md:gap-16'>
 						<p className='text-xl text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black md:text-2xl lg:text-3xl'>
-							Garantia de 7 dias.
+							Garantia de 30 dias.
 						</p>
 						<p className='text-center text-md text-white font-semibold w-9/12 md:text-lg lg:text-xl'>
 							Nos últimos {year - 2021} anos todos os alunos matriculados
