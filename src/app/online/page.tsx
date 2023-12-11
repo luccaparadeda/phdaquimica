@@ -63,28 +63,22 @@ const page: FC<pageProps> = ({}) => {
 			</section>
 			{/* <CourseContent content={courseContent} /> */}
 			<section className='flex flex-col items-center gap-4 md:gap-16 md:justify-center md:my-24'>
-				<p className='text-2xl text-center'>
+				<p className='text-lg lg:text-xl text-center'>
 					Este é um curso anual, você terá acesso a todo conteúdo programático
 					dos mais diversos vestibulares do Brasil (incluindo ENEM).
 				</p>
 				<div className='flex flex-col gap-4'>
 					<li className='flex w-full items-start gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-md md:text-lg lg:text-xl'>
-							Aulas semanais de 2 horas.
-						</p>
+						<p className='text-lg md:text-2xl'>Aulas semanais de 2 horas.</p>
 					</li>
 					<li className='flex w-full items-start gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-md md:text-lg lg:text-xl'>
-							SEGUNDA-FEIRA: 19h às 21h
-						</p>
+						<p className='text-lg md:text-2xl'>SEGUNDA-FEIRA: 19h às 21h</p>
 					</li>
 					<li className='flex w-full items-start gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-md md:text-lg lg:text-xl'>
-							TERÇA-FEIRA: 19h às 21h
-						</p>
+						<p className='text-lg md:text-2xl'>TERÇA-FEIRA: 19h às 21h</p>
 					</li>
 				</div>
 			</section>
@@ -158,19 +152,19 @@ const page: FC<pageProps> = ({}) => {
 					<div className='flex flex-col gap-5'>
 						<li className='flex items-center gap-2 md:gap-6 lg:gap-12'>
 							<Dot className='text-white w-8' />
-							<p className='text-md md:text-lg lg:text-xl'>
+							<p className='text-lg md:text-xl'>
 								Livro 01 em PDF: Química Geral
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
 							<Dot className='text-white w-8' />
-							<p className='text-md md:text-lg lg:text-xl'>
+							<p className='text-lg md:text-xl'>
 								Livro 02 em PDF: Físico-Química
 							</p>
 						</li>
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
 							<Dot className='text-white w-8' />
-							<p className='text-md md:text-lg lg:text-xl'>
+							<p className='text-lg md:text-xl'>
 								Livro 03 em PDF: Química Orgânica
 							</p>
 						</li>
@@ -188,21 +182,21 @@ const page: FC<pageProps> = ({}) => {
 				<div className='flex flex-col gap-5'>
 					<li className='flex items-center gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-md md:text-lg lg:text-xl'>
+						<p className='text-lg md:text-xl'>
 							Mentoria Online APROVA+: uma mentoria totalmente focada em
 							acelerar teus resultados e qualificar tuas notas!
 						</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-md md:text-lg lg:text-xl'>
+						<p className='text-lg md:text-xl'>
 							Curso Online PRÁTICA EM PROVAS ENEM: o curso que vai te ensinar a
 							pensar como a banca dos vestibulares
 						</p>
 					</li>
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-md md:text-lg lg:text-xl'>
+						<p className='text-lg md:text-xl'>
 							10+ Vídeos extra Caneca do Curso para te acompanhar nessa jornada
 						</p>
 					</li>

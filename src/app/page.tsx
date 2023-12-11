@@ -154,7 +154,7 @@ export default function Home() {
 						<Link href={'/presencial'}>
 							<Button
 								variant={'ghost'}
-								className='text-md text-green-400 hover:bg-green-900 hover:text-green-200'>
+								className='text-md text-green-400 border-2 border-green-200 rounded-2xl hover:bg-green-900 hover:text-green-200'>
 								Quero esse <ArrowRightCircle className='ml-2 text-green-200' />
 							</Button>
 						</Link>
@@ -187,7 +187,7 @@ export default function Home() {
 						<Link href={'/online'}>
 							<Button
 								variant={'ghost'}
-								className='text-md  text-gray-400 hover:bg-gray-900 hover:text-gray-200'>
+								className='text-md text-gray-400 border-gray-400 border-2 rounded-2xl hover:bg-gray-900 hover:text-gray-200'>
 								Quero esse <ArrowRightCircle className='ml-2 text-gray-400 ' />
 							</Button>
 						</Link>
