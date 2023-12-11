@@ -55,7 +55,7 @@ const page: FC<pageProps> = ({}) => {
 					O curso ideal para sua comodidade.
 				</p>
 				<p className='text-gray-500 drop-shadow-xl text-center font-semibold text-lg md:text-xl'>
-					As aulas ocorrem via Google Meets
+					Aulas via Google Meets
 				</p>
 				<Button className='animate-text shadow-lg shadow-blue-700 bg-blue-500 hover:bg-blue-900 md:text-lg'>
 					<a href={'#investimento'}>Quero fazer parte da turma</a>
@@ -174,6 +174,10 @@ const page: FC<pageProps> = ({}) => {
 								Livro 03 em PDF: Química Orgânica
 							</p>
 						</li>
+						<li className='flex gap-2 md:gap-6 lg:gap-12'>
+							<Dot className='text-white w-8' />
+							<p className='text-md md:text-lg lg:text-xl'>Caneca do curso</p>
+						</li>
 					</div>
 				</div>
 			</section>
@@ -205,7 +209,7 @@ const page: FC<pageProps> = ({}) => {
 				</div>
 			</section>
 			<section
-				className='flex flex-col items-center gap-24'
+				className='flex flex-col items-center gap-16'
 				id='investimento'>
 				<p className='text-2xl text-center animate-text bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 bg-clip-text text-transparent font-black lg:text-4xl'>
 					Investimento

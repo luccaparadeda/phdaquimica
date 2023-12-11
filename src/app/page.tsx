@@ -33,10 +33,10 @@ export default function Home() {
 							Química?
 						</span>
 					</h1>
-					<iframe
+					{/* <iframe
 						width='420'
 						height='315'
-						src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe>
+						src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe> */}
 					<ChevronsDown
 						color='white'
 						className='animate-bounce'
@@ -98,7 +98,7 @@ export default function Home() {
 						<li className='flex gap-2 md:gap-6 lg:gap-12'>
 							<Check className='text-white md:w-10 md:h-10 w-8' />
 							<p className='text-xl md:text-2xl lg:text-3xl'>
-								Grupo de atendimento exclusivo
+								Exemplos práticos
 							</p>
 						</li>
 					</ul>
@@ -123,16 +123,18 @@ export default function Home() {
 						Cursos
 					</h2>
 					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
-						<p className='text-3xl text-center px-4 py-2 text-white'>Online</p>
+						<p className='text-3xl text-center px-4 py-2 text-white'>
+							Presencial
+						</p>
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Tópicos mais abordados no ENEM
+									Tópicos mais abordados nos vestibulares
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									1 E-book em PDF
+									Apostilas físicas
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
@@ -142,14 +144,14 @@ export default function Home() {
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Caneca do curso
+									Símulados autorais
 								</p>
 							</li>
 							<li>
 								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Link href={'/online'}>
+						<Link href={'/presencial'}>
 							<Button
 								variant={'ghost'}
 								className='text-md text-green-400 hover:bg-green-900 hover:text-green-200'>
@@ -158,19 +160,15 @@ export default function Home() {
 						</Link>
 					</div>
 					<div className='flex gap-10 w-60 md:w-96 flex-col p-10 items-center shadow-2xl border-t-2 shadow-blue-950 rounded-3xl'>
-						<p className='text-3xl text-center px-4 py-2 text-white'>
-							Presencial
-						</p>
+						<p className='text-3xl text-center px-4 py-2 text-white'>Online</p>
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Conteúdo programático completo
+									100+ Listas Extras para aprofundar seu conhecimento
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
-								<p className='text-white text-lg text-center'>
-									3 E-books em PDF
-								</p>
+								<p className='text-white text-lg text-center'>E-books em PDF</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
@@ -179,14 +177,14 @@ export default function Home() {
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Caneca do curso
+									Aulas via Google Meets
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-gray-400 text-4xl w-full text-center'>...</p>
 							</li>
 						</ul>
-						<Link href={'/Presencial'}>
+						<Link href={'/online'}>
 							<Button
 								variant={'ghost'}
 								className='text-md  text-gray-400 hover:bg-gray-900 hover:text-gray-200'>

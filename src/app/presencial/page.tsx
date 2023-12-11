@@ -182,6 +182,10 @@ const page: FC<pageProps> = ({}) => {
 								Livro 03: Química Orgânica
 							</p>
 						</li>
+						<li className='flex gap-2 md:gap-6 lg:gap-12'>
+							<Dot className='text-white w-8' />
+							<p className='text-md md:text-lg lg:text-xl'>Caneca do curso</p>
+						</li>
 					</div>
 				</div>
 			</section>
@@ -207,13 +211,13 @@ const page: FC<pageProps> = ({}) => {
 					<li className='flex gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
 						<p className='text-md md:text-lg lg:text-xl'>
-							10+ Vídeos extra Caneca do Curso para te acompanhar nessa jornada
+							10+ Vídeos extra para te acompanhar nessa jornada
 						</p>
 					</li>
 				</div>
 			</section>
 			<section
-				className='flex flex-col items-center gap-24'
+				className='flex flex-col items-center gap-16'
 				id='investimento'>
 				<p className='text-2xl text-center animate-text bg-gradient-to-r from-lime-500 via-green-500 to-emerald-500 bg-clip-text text-transparent font-black lg:text-4xl'>
 					Investimento
@@ -243,7 +247,7 @@ const page: FC<pageProps> = ({}) => {
 						<p className=' text-center text-xl'>Parcelado</p>
 						<div className='flex flex-col gap-1 items-center'>
 							<p className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
-								10x R$185,90
+								10x R$185,90*
 							</p>
 						</div>
 						<Link
