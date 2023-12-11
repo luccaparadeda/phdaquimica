@@ -60,7 +60,7 @@ const page: FC<pageProps> = ({}) => {
 				</h1>
 				<p className='text-gray-400 drop-shadow-xl text-center font-semibold text-xl md:text-2xl'>
 					Este curso é para estudantes que desejam ser aprovados em
-					<b>universidades de alto nível</b>
+					<b> universidades de alto nível</b>
 				</p>
 				<p className='text-gray-500 drop-shadow-xl text-center font-semibold text-lg md:text-xl'>
 					Av. Independência, 601 - sala 301 - Porto Alegre

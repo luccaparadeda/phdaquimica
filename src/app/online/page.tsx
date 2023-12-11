@@ -74,10 +74,6 @@ const page: FC<pageProps> = ({}) => {
 					</li>
 					<li className='flex w-full items-start gap-2 md:gap-6 lg:gap-12'>
 						<Dot className='text-white h-8 w-8' />
-						<p className='text-lg md:text-2xl'>SEGUNDA-FEIRA: 19h às 21h</p>
-					</li>
-					<li className='flex w-full items-start gap-2 md:gap-6 lg:gap-12'>
-						<Dot className='text-white h-8 w-8' />
 						<p className='text-lg md:text-2xl'>TERÇA-FEIRA: 19h às 21h</p>
 					</li>
 				</div>

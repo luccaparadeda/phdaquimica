@@ -33,10 +33,9 @@ export default function Home() {
 							Química?
 						</span>
 					</h1>
-					{/* <iframe
-						width='420'
-						height='315'
-						src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe> */}
+					<iframe
+						className='w-11/12 h-96 md:w-10/12 md:h-96 lg:w-8/12 lg:h-96'
+						src='https://www.youtube.com/embed/pvQVQKdlgTo'></iframe>
 					<ChevronsDown
 						color='white'
 						className='animate-bounce'
@@ -129,22 +128,22 @@ export default function Home() {
 						<ul className='flex flex-col gap-4 items-center'>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Tópicos mais abordados nos vestibulares
+									Conteúdo programatico completo
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Apostilas físicas
+									3 livros físicos
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Plantões em grupo
+									Plantões Individuais e em Grupo
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Símulados autorais
+									Simulados Autorais
 								</p>
 							</li>
 							<li>
@@ -172,7 +171,7 @@ export default function Home() {
 							</li>
 							<li className='flex items-center gap-4'>
 								<p className='text-white text-lg text-center'>
-									Plantões em grupo e individuais
+									Plantões em grupo
 								</p>
 							</li>
 							<li className='flex items-center gap-4'>
