@@ -220,7 +220,7 @@ const page: FC<pageProps> = ({}) => {
 							<p className='text-gray-400'>À vista R$1799,00</p>
 						</div>
 						<Link
-							href='https://mpago.la/1bqRoAG'
+							href='https://mpago.la/1mswsC4'
 							target='_blank'>
 							<Button
 								variant={'ghost'}

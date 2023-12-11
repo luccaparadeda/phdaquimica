@@ -216,7 +216,7 @@ const page: FC<pageProps> = ({}) => {
 							</p>
 						</div>
 						<Link
-							href='https://mpago.la/1bqRoAG'
+							href='https://mpago.la/2XsPE9a'
 							target='_blank'>
 							<Button
 								variant={'ghost'}
