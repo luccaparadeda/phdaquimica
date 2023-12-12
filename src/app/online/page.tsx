@@ -83,12 +83,12 @@ const page: FC<pageProps> = ({}) => {
 			</section>
 			<section className='flex flex-col items-center gap-4 md:flex-row md:gap-16 md:justify-center md:my-24'>
 				<p className='text-2xl text-center'>
-					<span className='font-semibold'>Início:</span> <br /> 01/08/{year}
+					<span className='font-semibold'>Início:</span> <br /> 20/02/{year}
 				</p>
 				<ArrowRight className='text-white w-16 h-16 hidden md:block' />
 				<p className='text-2xl text-center'>
 					<span className='font-semibold'>Término:</span>
-					<br /> 21/11/{year}
+					<br /> 12/11/{year}
 				</p>
 			</section>
 			<section className='flex flex-col items-center gap-6 md:gap-12'>
