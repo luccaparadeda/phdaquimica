@@ -215,7 +215,7 @@ const page: FC<pageProps> = ({}) => {
 						<p className=' text-center text-xl'>Pix, Boleto ou Crédito</p>
 						<div className='flex flex-col gap-2 items-center'>
 							<pre className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
-								10x R$185,90*
+								12x R$185*
 							</pre>
 							<p className='text-gray-400'>À vista R$1799,00</p>
 						</div>
