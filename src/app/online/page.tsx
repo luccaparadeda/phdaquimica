@@ -23,8 +23,11 @@ import { FC } from 'react';
 interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
-	const year = new Date().getFullYear();
+	let year = new Date().getFullYear();
 
+	if (new Date().getMonth() > 10) {
+		year += 1;
+	}
 	interface CourseContentInterface {
 		text: cardKeyType;
 		Icon: LucideIcon;
