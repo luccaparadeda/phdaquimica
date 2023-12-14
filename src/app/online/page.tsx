@@ -93,7 +93,7 @@ const page: FC<pageProps> = ({}) => {
 			</section>
 			<section className='flex flex-col items-center gap-6 md:gap-12'>
 				<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
-					Porquê você deve investir no curso{' '}
+					Por que você deve investir no curso{' '}
 					<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
 						Online Química {year}
 					</span>
