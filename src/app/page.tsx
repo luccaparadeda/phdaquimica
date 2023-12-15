@@ -22,7 +22,10 @@ import Button from '@/components/ui/Button';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-	const year = new Date().getFullYear();
+	let year = new Date().getFullYear();
+	if (new Date().getMonth() > 10) {
+		year += 1;
+	}
 	return (
 		<div className=' flex flex-col items-center'>
 			<div className=' h-full flex flex-col'>
@@ -60,7 +63,7 @@ export default function Home() {
 					<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
 						Por que você deve investir nos cursos{' '}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
-							Química do pH {year} ?
+							Química do pH {year}?
 						</span>
 					</p>
 					<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
