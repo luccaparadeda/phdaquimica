@@ -60,7 +60,7 @@ export default function Home() {
 					<p className='text-2xl font-semibold text-center px-10 md:text-3xl lg:text-4xl'>
 						Por que você deve investir nos cursos{' '}
 						<span className='animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-black'>
-							Química do pH {year}
+							Química do pH {year} ?
 						</span>
 					</p>
 					<ul className='flex flex-col w-9/12 gap-4 sm:w-1/2 md:w-fit md:gap-8'>
