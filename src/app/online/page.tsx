@@ -211,15 +211,16 @@ const page: FC<pageProps> = ({}) => {
 					<div className='h-52 w-52 flex flex-col justify-evenly items-center shadow-2xl shadow-indigo-800/25 border-x-2 rounded-3xl px-2 md:h-72 md:w-72 lg:h-96 lg:w-96'>
 						<p className=' text-center text-xl'>Pix, Boleto ou Crédito</p>
 						<div className='flex flex-col gap-2 items-center'>
+							<p className='text-gray-400'>2º lote</p>
 							<pre className='text-xl font-semibold font-mono md:font-black md:text-2xl'>
-								12x R$145,00 *
+								12x R$151,91 *
 							</pre>
 							<p className='text-gray-400'>
-								À vista 1399,00 <span>R$</span>
+								À vista 1499,00 <span>R$</span>
 							</p>
 						</div>
 						<Link
-							href='https://mpago.la/2XsPE9a'
+							href='https://mpago.la/166qsor'
 							target='_blank'>
 							<Button
 								variant={'ghost'}
