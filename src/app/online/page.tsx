@@ -219,20 +219,19 @@ const page: FC<pageProps> = ({}) => {
 								À vista 1499,00 <span>R$</span>
 							</p>
 						</div>
-						<Link
-							href='https://mpago.la/166qsor'
-							target='_blank'>
-							<Button
-								variant={'ghost'}
-								size={'lg'}
-								className='shadow-xl rounded-full font-bold shadow-green-400/50'>
-								Comprar{' '}
-								<ArrowRightCircle
-									size={20}
-									className='ml-2'
-								/>
-							</Button>
-						</Link>
+						<div className='bg-red-500 px-5 rounded-md'>Esgotado!</div>
+
+						<Button
+							disabled
+							variant={'ghost'}
+							size={'lg'}
+							className='shadow-xl rounded-full font-bold shadow-green-400/50'>
+							Comprar{' '}
+							<ArrowRightCircle
+								size={20}
+								className='ml-2'
+							/>
+						</Button>
 					</div>
 				</div>
 				<p className='text-gray-400 text-xs text-center font-semibold font-mono md:font-black md:text-md'>
@@ -245,3 +244,4 @@ const page: FC<pageProps> = ({}) => {
 };
 
 export default page;
+
